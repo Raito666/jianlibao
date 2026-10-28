@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Native transition regression</title>
+<style>
+  :root { color: #fafaf9; background: #10150e; font: 16px sans-serif; }
+  :root[data-theme="light"] { color: #10150e; background: #fafaf9; }
+  main { padding: 24px; }
+  button { padding: 12px; }
+  .calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+  .day { padding: 12px; border: 1px solid currentColor; }
+  h1 { view-transition-name: page-title; }
+  p { view-transition-name: page-subtitle; }
+  main > button { view-transition-name: page-action; }
+  ::view-transition { pointer-events: none; }
+</style>
+<nav>
+  <button onclick="change('plans')">计划</button>
+  <button onclick="change('library')">动作</button>
+  <button onclick="change('history')">历史</button>
+</nav>
+<main tabindex="-1">
+  <h1>today</h1>
+  <p>不加载React、数据库、媒体或应用代码。</p>
+  <button>开始</button>
+  <div class="calendar"></div>
+</main>
+<script>
+  const evidence = { started: 0, updated: 0, ready: 0, finished: 0, errors: [] };
+  window.evidence = evidence;
+  function change(destination) {
+    evidence.started++;
+    const transition = document.startViewTransition(() => {
+      document.querySelector('h1').textContent = destination;
+      document.querySelector('.calendar').replaceChildren(
+        ...Array.from({ length: destination === 'library' ? 120 : 31 }, (_, index) => {
+          const day = document.createElement('div');
+          day.className = 'day';
+          day.textContent = String(index + 1);
+          return day;
+        }),
+      );
+      evidence.updated++;
+    });
+    for (const phase of ['ready', 'finished'])
+      void transition[phase].then(
+        () => evidence[phase]++,
+        error => evidence.errors.push(phase + ': ' + error.message),
+      );
+  }
+</script>

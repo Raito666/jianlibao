@@ -1,0 +1,205 @@
+/* Stage 6 uses the existing typography, spacing, theme and motion tokens. */
+.body-metrics {
+  margin-bottom: var(--space-6);
+  min-width: 0;
+}
+.body-heading {
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.body-heading h2 {
+  margin-bottom: var(--space-2);
+}
+.body-heading p {
+  margin: 0;
+}
+.body-latest {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  padding: var(--space-6) 0 var(--space-8);
+  border-bottom: 1px solid var(--line);
+}
+.body-latest > div {
+  min-width: 0;
+}
+.body-latest > div > span,
+.body-latest small {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+.body-value {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.body-value strong {
+  font-family: var(--font-num);
+  font-size: var(--text-display);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  overflow-wrap: anywhere;
+}
+.body-value > span {
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+.body-trend-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+.body-trend-head h3 {
+  margin: 0;
+}
+.body-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  min-width: 0;
+}
+.body-controls .field {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+.body-controls select {
+  width: 100%;
+  min-width: 0;
+}
+.body-record-heading {
+  margin-top: var(--space-8);
+}
+.body-records {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.body-records > li {
+  display: flex;
+  align-items: start;
+  gap: var(--space-4);
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--line);
+}
+.body-record-copy {
+  flex: 1;
+  min-width: 0;
+}
+.body-record-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin: var(--space-2) 0 0;
+}
+.body-record-values > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.body-record-values dt {
+  color: var(--muted);
+}
+.body-record-values dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+.body-record-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+.body-note {
+  margin: var(--space-3) 0 0;
+  max-width: 34em;
+  color: var(--muted);
+  white-space: pre-wrap;
+}
+.body-form {
+  display: grid;
+  /* Native date controls must not size the form's implicit auto column. */
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  max-width: 100%;
+  gap: var(--space-4);
+}
+.body-form p,
+.body-form .field {
+  margin: 0;
+}
+.body-form .field {
+  grid-template-columns: minmax(0, 1fr);
+}
+.body-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
+  gap: var(--space-4);
+}
+.body-form .form-input,
+.body-form .form-textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.body-form .notice > a {
+  display: block;
+  color: inherit;
+  min-height: 44px;
+  padding: var(--space-2) 0;
+}
+.body-measurements summary {
+  min-height: 44px;
+  padding: var(--space-2) 0;
+  cursor: pointer;
+}
+.body-measurements .body-form-grid {
+  padding-top: var(--space-3);
+}
+.rpe-select {
+  min-width: 80px;
+  min-height: 44px;
+  max-width: 100%;
+  font-size: var(--text-base);
+  background: var(--panel);
+  border: 1px solid var(--control-line);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+}
+@media (max-width: 600px) {
+  .body-latest {
+    gap: var(--space-4);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .body-latest > div:first-child {
+    grid-column: 1 / -1;
+  }
+  .body-latest small {
+    overflow-wrap: anywhere;
+  }
+  .body-records > li {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .body-record-actions {
+    align-self: end;
+    gap: var(--space-2);
+  }
+  .body-controls {
+    width: 100%;
+  }
+}
+@media (max-width: 359px) {
+  .body-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

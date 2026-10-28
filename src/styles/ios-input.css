@@ -1,0 +1,120 @@
+/* Native iOS only: these attributes exist only while an editable field owns focus. */
+.ios-input-accessory-slot:empty {
+  display: none;
+}
+.ios-input-accessory-slot {
+  flex-shrink: 0;
+  min-width: 0;
+}
+/* WKWebView also pans ordinary top-layer dialogs after a native keyboard closes. */
+.app-shell[data-native-platform="ios"] dialog.modal {
+  top: calc(var(--safe-top) + var(--ios-dialog-top, 0px));
+  bottom: calc(var(--safe-bottom) + var(--ios-dialog-bottom, 0px));
+  max-height: max(0px, calc(var(--ios-dialog-height, 100dvh) - var(--safe-top) - var(--safe-bottom) - var(--space-6)));
+}
+/* WKWebView can retain its visual pan after the keyboard closes. Fixed
+   navigation needs the same origin compensation as the top-layer dialog;
+   otherwise it sits above the screen bottom and covers the final record. */
+.app-shell[data-native-platform="ios"] .mobile-nav {
+  bottom: calc(0px - var(--ios-dialog-top, 0px));
+}
+/* iOS's native date appearance can extend its value box past the form track. */
+.app-shell[data-native-platform="ios"] .body-form input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  min-inline-size: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
+}
+.app-shell[data-native-platform="ios"] .body-form input[type="date"]::-webkit-date-and-time-value {
+  min-width: 0;
+  text-align: left;
+}
+.ios-input-accessory {
+  position: fixed;
+  z-index: 65;
+  right: 0;
+  bottom: var(--ios-input-bottom, 0px);
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 64px;
+  padding: var(--space-2) max(var(--space-2), var(--safe-right)) max(var(--space-2), var(--safe-bottom)) max(var(--space-2), var(--safe-left));
+  border-top: 1px solid var(--control-line);
+  background: var(--panel-raised);
+  color: var(--text);
+}
+.ios-input-accessory-modal {
+  position: static;
+  padding-block: var(--space-2);
+}
+.ios-input-label {
+  flex: 1 1 0;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+.ios-input-accessory button {
+  flex: 0 0 auto;
+  min-width: 48px;
+  min-height: 48px;
+  padding: var(--space-2);
+  border: 1px solid var(--control-line);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--text);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  white-space: nowrap;
+}
+.ios-input-accessory button:disabled {
+  color: var(--muted);
+  opacity: 0.5;
+}
+.ios-input-accessory .ios-input-dismiss {
+  color: var(--accent-text);
+}
+html[data-ios-input-active="true"] .mobile-nav {
+  visibility: hidden;
+  pointer-events: none;
+}
+html[data-ios-input-active="true"] dialog.modal:has([data-ios-editing="true"]),
+html[data-ios-input-active="true"] dialog.modal[data-ios-editing="true"] {
+  top: calc(var(--ios-visible-top, 0px) + var(--safe-top) + var(--space-3));
+  bottom: auto;
+  max-height: max(0px, calc(var(--ios-visible-height, 100dvh) - var(--safe-top) - var(--space-6)));
+  margin-block: 0;
+}
+html[data-ios-input-active="true"] dialog.modal:has([data-ios-editing="true"]) .modal-header,
+html[data-ios-input-active="true"] dialog.modal[data-ios-editing="true"] .modal-header {
+  padding-block: var(--space-2);
+}
+html[data-ios-input-active="true"] dialog.modal:has([data-ios-editing="true"]) .modal-footer,
+html[data-ios-input-active="true"] dialog.modal[data-ios-editing="true"] .modal-footer {
+  padding-block: var(--space-2);
+}
+html[data-ios-input-active="true"] .modal-body {
+  scroll-padding-block: var(--space-3);
+}
+html[data-ios-input-active="true"] .main:has(.workout-view[data-ios-editing="true"]) {
+  display: flex;
+  flex-direction: column;
+  height: var(--ios-visible-height, 100dvh);
+  min-height: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.workout-view[data-ios-editing="true"] {
+  flex: 1;
+  min-height: 0;
+  margin-bottom: 0;
+  padding-bottom: calc(80px + var(--safe-bottom));
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-padding-block: var(--space-3) 80px;
+}
+.workout-view[data-ios-editing="true"] :is(.rest-panel, .workout-footer):not(:focus-within) {
+  visibility: hidden;
+  pointer-events: none;
+}

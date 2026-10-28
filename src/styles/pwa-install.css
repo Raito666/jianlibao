@@ -1,0 +1,18 @@
+.install-app { min-width: 0; }
+.install-heading { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
+.install-heading img { flex: 0 0 48px; border-radius: var(--radius-md); }
+.install-heading > div { min-width: 0; }
+.install-heading h2 { margin: 0; }
+.install-heading p { margin: var(--space-1) 0 0; }
+.install-app p, .install-steps { overflow-wrap: anywhere; max-width: 34em; }
+.install-app > .btn { min-height: 48px; margin-bottom: var(--space-3); }
+.install-guide summary { display: flex; align-items: center; min-height: 48px; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+.install-guide summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.install-platforms { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-2) 0 var(--space-4); }
+.install-platforms .btn { min-height: 48px; white-space: normal; }
+.install-platforms [aria-pressed="true"] { border-color: var(--accent-text); color: var(--accent-text); background: var(--accent-subtle); }
+.install-steps { margin: 0; padding-left: var(--space-6); }
+.install-steps li + li { margin-top: var(--space-3); }
+.install-caption { font-size: var(--text-sm); margin: var(--space-4) 0 0; }
+.install-hint { padding: var(--space-3); background: var(--surface-2); border-left: 4px solid var(--accent); }
+.install-state { display: flex; align-items: center; gap: var(--space-2); color: var(--accent-text); }

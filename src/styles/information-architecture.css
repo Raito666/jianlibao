@@ -1,0 +1,149 @@
+/* Stage 7: frequent actions first; existing type, color and motion tokens stay authoritative. */
+.main[data-page='exercises'] .topbar h1 {
+  font-size: var(--text-xl);
+}
+.main[data-page='progress'] .topbar h1 {
+  font-size: var(--text-xl);
+}
+.progress-masthead {
+  padding-bottom: var(--space-4);
+}
+.statistics-export {
+  margin-top: var(--space-8);
+}
+.body-filter {
+  margin-bottom: var(--space-4);
+  border-block: 1px solid var(--line);
+}
+.body-filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 48px;
+  padding: var(--space-2) 0;
+  background: transparent;
+  text-align: left;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+.body-filter-toggle > span {
+  flex: 1;
+}
+.body-filter [hidden] {
+  display: none;
+}
+.library-page .body-filter .body-atlas {
+  margin: 0 0 var(--space-4);
+}
+.library-page .offline-library {
+  margin-top: var(--space-8);
+}
+.progress-trend-section,
+.progress-distribution-section,
+.progress-records-section {
+  margin-bottom: var(--space-10);
+  min-width: 0;
+}
+.progress-distribution-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  align-items: start;
+  gap: var(--space-8);
+}
+.progress-distribution-section .heatmap-panel {
+  margin-bottom: 0;
+}
+.progress-distribution-section > *,
+.progress-records-section > * {
+  min-width: 0;
+}
+@media (max-width: 1100px) {
+  .progress-distribution-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 760px), (max-width: 1000px) and (max-height: 500px) and (hover: none) and (pointer: coarse) {
+  .progress-page:has(.statistics-page) .progress-masthead {
+    padding-bottom: var(--space-2);
+  }
+  .progress-page:has(.statistics-page) .progress-tabbar {
+    padding-block: var(--space-1) var(--space-2);
+  }
+  .statistics-page .period-caption {
+    margin-bottom: var(--space-4);
+  }
+  .statistics-page .analytics-overview {
+    margin-top: var(--space-4);
+  }
+  .statistics-page .analytics-overview > h2 {
+    margin-bottom: var(--space-3);
+  }
+  .main[data-page='exercises'] .topbar,
+  .main[data-page='progress'] .topbar {
+    margin-bottom: var(--space-4);
+  }
+  .library-page .library-intro {
+    align-items: center;
+  }
+  .library-intro-detail {
+    display: none;
+  }
+  .library-page .library-intro h2 {
+    margin-bottom: var(--space-1);
+  }
+  .library-page .library-intro {
+    margin-bottom: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+  .library-page .library-toolbar {
+    gap: var(--space-2);
+    margin-bottom: var(--space-1);
+  }
+  .library-page .library-toolbar .segmented {
+    width: 100%;
+  }
+  .library-page .library-toolbar .segmented > button {
+    flex: 1;
+    padding-inline: var(--space-2);
+  }
+  .body-filter {
+    margin-bottom: var(--space-2);
+  }
+  .body-filter-toggle {
+    min-height: 44px;
+  }
+  .library-page .library-filter-line {
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  .library-page .library-filter-line > .row {
+    flex-wrap: nowrap;
+  }
+  .library-page .library-filter-line .form-select {
+    min-height: 44px;
+    min-width: 0;
+    width: 0;
+    flex: 1;
+    padding-inline: var(--space-2);
+  }
+  .library-page .equipment-heading {
+    margin-block: var(--space-1);
+  }
+  .library-page .movement-art {
+    height: 128px;
+  }
+  .library-page .movement-art img {
+    height: 120px;
+  }
+  .library-page .favorite-button {
+    top: 132px;
+  }
+  .library-page .movement-info {
+    padding-block: var(--space-3);
+  }
+  .library-page .movement-info > p {
+    margin-bottom: var(--space-2);
+  }
+}

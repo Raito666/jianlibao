@@ -1,0 +1,47 @@
+/* Mobile browsers resize visualViewport independently from layout/dvh when
+   a software keyboard opens. The native iOS shell keeps its own input path. */
+html[data-web-keyboard='true'] dialog.modal {
+  top: calc(var(--web-visible-top) + var(--safe-top) + var(--space-3));
+  bottom: auto;
+  /* The visible bottom is above the keyboard, which already covers the home inset. */
+  max-height: max(0px, calc(var(--web-visible-height) - var(--safe-top) - var(--space-6)));
+  margin-block: 0;
+}
+html[data-web-keyboard='true'] .modal-header,
+html[data-web-keyboard='true'] .modal-footer {
+  padding-block: var(--space-2);
+}
+html[data-web-keyboard='true'] .modal-body {
+  scroll-padding-block: var(--space-3);
+}
+html[data-web-keyboard-compact] .modal-header,
+html[data-web-keyboard-compact] .modal-footer {
+  padding-block: var(--space-1);
+}
+html[data-web-keyboard-compact] .modal-footer > .btn {
+  min-height: 44px;
+  padding-inline: var(--space-2);
+}
+html[data-web-keyboard='true'] .modal-body .form-textarea {
+  min-height: 48px;
+  height: clamp(48px, calc(var(--web-visible-height) - 180px), 100px);
+  max-height: max(48px, calc(var(--web-visible-height) - 180px));
+}
+html[data-web-keyboard='true'] .main:not([data-page='workout']) {
+  padding-bottom: calc(100dvh - var(--web-visible-height) + var(--space-8));
+}
+html[data-web-keyboard='true'] .mobile-nav,
+.main[data-web-input-active='true'] .workout-footer,
+.main[data-web-input-active='true'] .rest-panel {
+  visibility: hidden;
+  pointer-events: none;
+}
+.main[data-web-input-active='true'] {
+  height: calc(var(--web-visible-height) + var(--web-visible-top));
+  min-height: 0;
+  padding-bottom: 0;
+}
+.main[data-web-input-active='true'] .workout-view {
+  margin-bottom: 0;
+  scroll-padding-block: var(--space-4);
+}

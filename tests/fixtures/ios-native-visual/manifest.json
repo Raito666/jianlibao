@@ -1,0 +1,47 @@
+{
+  "painted": {
+    "sourcePng": "artifacts/ios-four-module-2026-10-24/attempt-14/download-4d59ea/captures/created/saved-statistics.png",
+    "sourcePngSha256": "c18fba3f03fe79aeb83718ec720dd15aef83cf6dcf2bc0f00aec40718e50a129",
+    "sourceAxSha256": "47ad49d051d8549e3676652832497d4f4f5458bdc5ffa1f36e679aedebcb8c32",
+    "cropPixels": [
+      0,
+      2229,
+      1179,
+      2556
+    ],
+    "originPoints": [
+      0,
+      743
+    ],
+    "screenPoints": [
+      393,
+      852
+    ],
+    "purpose": "raw pixel crop only; no text replacement or resizing"
+  },
+  "clipped": {
+    "sourcePng": "artifacts/ios-four-module-2026-10-24/attempt-14/download-4d59ea/captures/rebooted/rebooted-body-record.png",
+    "sourcePngSha256": "3b1c74e05714aad38e460a290c24cf89c5ca179f4a7c137d0a021861ad9db7c6",
+    "sourceAxSha256": "bb0964527e721a9db58250ff12d35d773bf326d64fbc9e397eb505b11b8554cb",
+    "cropPixels": [
+      0,
+      2229,
+      1179,
+      2556
+    ],
+    "originPoints": [
+      0,
+      743
+    ],
+    "screenPoints": [
+      393,
+      852
+    ],
+    "purpose": "raw pixel crop only; no text replacement or resizing"
+  },
+  "media": {
+    "sourceAx": "artifacts/ios-four-module-2026-10-24/attempt-14/download-4d59ea/captures/supplement/failure-missing-element.txt",
+    "sourceAxSha256": "8e3b5352fa2e3f59916c30bb361ac0f878b011cc3e941a327d724e39eb7c7b67",
+    "purpose": "exact adjacent media subtree; no user database content"
+  }
+}

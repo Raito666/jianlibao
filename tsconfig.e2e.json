@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "include": [
+    "src",
+    "tests/e2e",
+    "playwright.config.ts",
+    "playwright.webkit.config.ts",
+    "scripts/e2e-output.mjs"
+  ]
+}

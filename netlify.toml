@@ -1,0 +1,7 @@
+[build]
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "nft"
+  included_files = ["netlify/functions/THIRD-PARTY-NOTICES.md"]

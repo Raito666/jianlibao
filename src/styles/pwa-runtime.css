@@ -1,0 +1,24 @@
+.pwa-readiness { min-width: 0; }
+.pwa-readiness h2 { margin-bottom: var(--space-4); }
+.pwa-health-row, .pwa-setting-heading { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.pwa-health-row { color: var(--text-primary); margin-bottom: var(--space-2); }
+.pwa-health-row.is-ready { color: var(--accent-text); }
+.pwa-readiness p { max-width: 34em; overflow-wrap: anywhere; }
+.pwa-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+.pwa-readiness .btn { min-height: 48px; max-width: 100%; white-space: normal; }
+.pwa-settings-section { border-top: 1px solid var(--line); margin-top: var(--space-6); padding-top: var(--space-5); }
+.pwa-settings-section h3 { margin: 0; font-size: var(--text-md); }
+.pwa-setting-heading { justify-content: space-between; }
+.pwa-settings-section > p { margin: var(--space-3) 0; }
+.pwa-settings-section .pwa-feedback { font-size: var(--text-sm); margin-bottom: 0; }
+.pwa-feedback:empty { display: none; }
+.pwa-storage-size { font-size: var(--text-sm); }
+.pwa-update-notice { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); margin-bottom: var(--space-5); background: var(--surface-2); border: 1px solid var(--control-border); border-radius: var(--radius-lg); font-size: var(--text-sm); }
+.pwa-update-notice > svg { flex-shrink: 0; margin-top: var(--space-1); }
+.pwa-update-notice p { color: var(--muted); margin-top: var(--space-1); max-width: 34em; }
+.save-compact { display: none; }
+@media (max-width: 760px), (max-width: 1000px) and (max-height: 500px) and (hover: none) and (pointer: coarse) {
+  .main:not([data-page='workout']) .save-indicator { display: flex; flex-shrink: 0; }
+  .main:not([data-page='workout']) .save-indicator .save-detail, .save-indicator small { display: none; }
+  .main:not([data-page='workout']) .save-compact { display: inline; white-space: nowrap; }
+}

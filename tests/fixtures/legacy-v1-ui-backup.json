@@ -1,0 +1,2903 @@
+{
+  "app": "jianlibao",
+  "formatVersion": 1,
+  "exportedAt": "2026-10-18T14:50:16.516Z",
+  "data": {
+    "schemaVersion": 1,
+    "revision": 15,
+    "exercises": [
+      {
+        "id": "ex-squat",
+        "name": "杠铃深蹲",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "记录杠铃和杠铃片的总重量。以自己能控制的幅度完成，动作不适时停止。"
+      },
+      {
+        "id": "ex-bench",
+        "name": "杠铃卧推",
+        "muscle": "胸部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "记录包含杠的总重量。使用合适的保护装置，保持稳定后再完成每次动作。"
+      },
+      {
+        "id": "ex-row",
+        "name": "杠铃划船",
+        "muscle": "背部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "记录包含杠的总重量。保持躯干稳定，在可控制的幅度内完成。"
+      },
+      {
+        "id": "ex-press",
+        "name": "哑铃推举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "双手同时训练时填写两只哑铃的总重量；程序不会额外乘二。"
+      },
+      {
+        "id": "ex-rdl",
+        "name": "罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "记录包含杠的总重量。以髋部活动为主，选择能稳定控制的重量与幅度。"
+      },
+      {
+        "id": "ex-lat",
+        "name": "高位下拉",
+        "muscle": "背部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "记录当前器械标示的配重；不同器械的读数不宜直接比较。"
+      },
+      {
+        "id": "ex-curl",
+        "name": "哑铃弯举",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "双手同时训练记录两只总重；单侧训练左右各记一组，填写当侧重量与次数。"
+      },
+      {
+        "id": "ex-lunge",
+        "name": "哑铃弓步蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "单侧动作左右各记录一组，每组填写实际外部总负重和当侧次数。"
+      },
+      {
+        "id": "ex-pushup",
+        "name": "俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "只记录完成次数，不按体重换算重量容量。可选择适合自己的支撑方式。"
+      },
+      {
+        "id": "ex-pullup",
+        "name": "引体向上",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "只记录完成次数，不用体重或辅助配重推算有效负重。辅助版本建议另建动作。"
+      },
+      {
+        "id": "ex-plank",
+        "name": "平板支撑",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "记录持续秒数，保持可控制的姿势与正常呼吸；不将秒数计入重量容量。"
+      },
+      {
+        "id": "ex-crunch",
+        "name": "卷腹",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "只记录完成次数，以可控制的幅度进行；不将体重计入重量容量。"
+      },
+      {
+        "id": "catalog-incline-bench-press",
+        "name": "上斜杠铃卧推",
+        "muscle": "胸部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "水平推举。使用头侧抬高的上斜凳，负重落点随凳面角度调整，不为碰胸而过度展开肩部。"
+      },
+      {
+        "id": "catalog-incline-dumbbell-press",
+        "name": "上斜哑铃卧推",
+        "muscle": "胸部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "水平推举。在上斜凳上稳定肩背；两只哑铃同步推起，手腕始终对齐前臂。"
+      },
+      {
+        "id": "catalog-dumbbell-bench-press",
+        "name": "平板哑铃卧推",
+        "muscle": "胸部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "水平推举。躺稳在训练凳上，双脚支撑地面，肩胛向后下方收稳，手腕与前臂对齐。"
+      },
+      {
+        "id": "catalog-decline-bench-press",
+        "name": "下斜杠铃卧推",
+        "muscle": "胸部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "水平推举。先固定双脚与下斜凳位置，使用保护装置；起杠与回杠均在可控状态完成。"
+      },
+      {
+        "id": "catalog-machine-chest-press",
+        "name": "器械坐姿推胸",
+        "muscle": "胸部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "水平推举。调整座椅让握把位于胸部附近；背部贴稳靠垫，按器械既定轨迹推起。"
+      },
+      {
+        "id": "catalog-pec-deck",
+        "name": "蝴蝶机夹胸",
+        "muscle": "胸部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "夹胸与飞鸟。调整凳面或滑轮位置，让手臂处在肩部舒适的平面，肘部保留轻微弯曲。"
+      },
+      {
+        "id": "catalog-cable-fly",
+        "name": "绳索夹胸",
+        "muscle": "胸部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "夹胸与飞鸟。调整凳面或滑轮位置，让手臂处在肩部舒适的平面，肘部保留轻微弯曲。"
+      },
+      {
+        "id": "catalog-weighted-push-up",
+        "name": "负重俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "weight-reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-overhead-press",
+        "name": "杠铃站姿推举",
+        "muscle": "肩部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肩上推举。稳定坐姿或站姿，收紧腹部，负重位于肩部附近，手腕支撑在肘部上方。"
+      },
+      {
+        "id": "catalog-arnold-press",
+        "name": "阿诺德推举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肩上推举。从掌心朝向身体的起点，随上推自然旋转前臂；旋转幅度以肩部舒适为准。"
+      },
+      {
+        "id": "catalog-lateral-raise",
+        "name": "哑铃侧平举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-cable-lateral-raise",
+        "name": "绳索侧平举",
+        "muscle": "肩部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-front-raise",
+        "name": "哑铃前平举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-rear-delt-fly",
+        "name": "哑铃反向飞鸟",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-reverse-pec-deck",
+        "name": "蝴蝶机反向飞鸟",
+        "muscle": "肩部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-face-pull",
+        "name": "绳索面拉",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "面拉。将绳索或弹力带固定在脸部附近高度，站稳并保持轻度屈膝。"
+      },
+      {
+        "id": "catalog-upright-row",
+        "name": "杠铃直立划船",
+        "muscle": "肩部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肩部平举。握把沿身体前方抬起，肘部在舒适范围内带动；不强求超过肩高。"
+      },
+      {
+        "id": "catalog-deadlift",
+        "name": "传统杠铃硬拉",
+        "muscle": "臀部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "从地面硬拉。让负重接近脚部中线，屈髋屈膝握稳，收紧腹部并稳定背部。"
+      },
+      {
+        "id": "catalog-t-bar-row",
+        "name": "T杠划船",
+        "muscle": "背部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-dumbbell-bent-over-row",
+        "name": "双臂哑铃俯身划船",
+        "muscle": "背部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-one-arm-dumbbell-row",
+        "name": "单臂哑铃划船",
+        "muscle": "背部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-chest-supported-row",
+        "name": "胸托划船",
+        "muscle": "背部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "划船。胸部贴稳斜凳或器械靠垫，避免每次拉动时抬离支撑。"
+      },
+      {
+        "id": "catalog-seated-row",
+        "name": "坐姿绳索划船",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-machine-row",
+        "name": "器械划船",
+        "muscle": "背部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-close-grip-lat-pulldown",
+        "name": "窄握高位下拉",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "下拉。用窄距或对握把，让肘部向身体两侧下方靠近，躯干不过度后仰。"
+      },
+      {
+        "id": "catalog-straight-arm-pulldown",
+        "name": "直臂下压",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "下拉。手肘只保留小幅弯曲，以肩关节带动上臂向身体两侧下压，不做反复屈肘。"
+      },
+      {
+        "id": "catalog-assisted-pull-up",
+        "name": "辅助引体向上",
+        "muscle": "背部",
+        "equipment": "器械",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。调整辅助装置并稳稳踏上支撑；辅助配重越大通常帮助越多，只记录完成次数。"
+      },
+      {
+        "id": "catalog-weighted-pull-up",
+        "name": "负重引体向上",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "weight-reps",
+        "description": "引体与悬垂拉起。确认单杠稳定，握稳后以肩部可控的悬垂作为起点，腹部保持张力。"
+      },
+      {
+        "id": "catalog-chin-up",
+        "name": "反握引体向上",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。确认单杠稳定，握稳后以肩部可控的悬垂作为起点，腹部保持张力。"
+      },
+      {
+        "id": "catalog-shrug",
+        "name": "杠铃耸肩",
+        "muscle": "背部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "耸肩。站稳，负重自然垂于身体两侧，手臂伸直而不僵硬。"
+      },
+      {
+        "id": "catalog-front-squat",
+        "name": "杠铃前蹲",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "深蹲。负重支撑在肩前，保持肘部与躯干支撑，握持方式以腕肩舒适为准。"
+      },
+      {
+        "id": "catalog-hack-squat",
+        "name": "哈克深蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "深蹲。背部贴稳哈克机靠垫，先确认安全挡位，按固定轨迹完成。"
+      },
+      {
+        "id": "catalog-leg-press",
+        "name": "器械腿举",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "腿举。调整座椅，背部和臀部贴稳靠垫，双脚均匀踩住踏板。"
+      },
+      {
+        "id": "catalog-bulgarian-split-squat",
+        "name": "保加利亚分腿蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。后脚放在稳定支撑上，前脚与凳子的距离以能保持平衡为准，主要以前腿发力。"
+      },
+      {
+        "id": "catalog-step-up",
+        "name": "负重登阶",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-leg-extension",
+        "name": "坐姿腿屈伸",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "腿屈伸。调整器械转轴与膝关节对齐，小腿垫放在脚踝上方，坐稳靠背。"
+      },
+      {
+        "id": "catalog-leg-curl",
+        "name": "器械腿弯举",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-seated-leg-curl",
+        "name": "坐姿腿弯举",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-hip-thrust",
+        "name": "杠铃臀推",
+        "muscle": "臀部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "臀桥与臀推。上背靠稳训练凳，顶点让小腿接近竖直；视线与肋骨保持自然，避免用腰顶起。"
+      },
+      {
+        "id": "catalog-glute-bridge",
+        "name": "自重臀桥",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-good-morning",
+        "name": "杠铃早安式",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-standing-calf-raise",
+        "name": "站姿器械提踵",
+        "muscle": "小腿",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-seated-calf-raise",
+        "name": "坐姿提踵",
+        "muscle": "小腿",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-hammer-curl",
+        "name": "锤式弯举",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-preacher-curl",
+        "name": "牧师凳弯举",
+        "muscle": "手臂",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。上臂贴稳牧师凳垫面，肘部伸展到可控范围，不在底部突然反弹。"
+      },
+      {
+        "id": "catalog-cable-curl",
+        "name": "绳索弯举",
+        "muscle": "手臂",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-reverse-curl",
+        "name": "反握弯举",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-wrist-curl",
+        "name": "屈腕",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "前臂与腕部。前臂放稳在支撑上，腕部保留活动空间，握稳较轻负重。"
+      },
+      {
+        "id": "catalog-tricep-pushdown",
+        "name": "绳索直杆下压",
+        "muscle": "手臂",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-overhead-tricep-extension",
+        "name": "绳索过头臂屈伸",
+        "muscle": "手臂",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-skull-crusher",
+        "name": "杠铃仰卧臂屈伸",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-close-grip-bench-press",
+        "name": "窄握杠铃卧推",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "水平推举。握距略窄于常规卧推，仍以手腕和肩部舒适为准；不必把双手挤在一起。"
+      },
+      {
+        "id": "catalog-dip",
+        "name": "双杠臂屈伸",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-assisted-dip",
+        "name": "辅助双杠臂屈伸",
+        "muscle": "手臂",
+        "equipment": "器械",
+        "kind": "reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-side-plank",
+        "name": "侧平板支撑",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-hanging-leg-raise",
+        "name": "悬垂举腿",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-cable-crunch",
+        "name": "绳索卷腹",
+        "muscle": "核心",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "卷腹与躯干屈曲。仰卧或在指定支撑上稳定骨盆，手臂不牵拉头颈。"
+      },
+      {
+        "id": "catalog-ab-wheel",
+        "name": "健腹轮",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-running",
+        "name": "跑步",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-walking",
+        "name": "步行",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-cycling",
+        "name": "骑行",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-rowing",
+        "name": "划船机",
+        "muscle": "背部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-stair-climber",
+        "name": "登阶机",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-dumbbell-fly",
+        "name": "哑铃飞鸟",
+        "muscle": "胸部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "夹胸与飞鸟。调整凳面或滑轮位置，让手臂处在肩部舒适的平面，肘部保留轻微弯曲。"
+      },
+      {
+        "id": "catalog-incline-cable-fly",
+        "name": "上斜绳索夹胸",
+        "muscle": "胸部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "夹胸与飞鸟。调整凳面或滑轮位置，让手臂处在肩部舒适的平面，肘部保留轻微弯曲。"
+      },
+      {
+        "id": "catalog-decline-dumbbell-press",
+        "name": "下斜哑铃卧推",
+        "muscle": "胸部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "水平推举。下斜凳上先固定双脚，哑铃进出起始位置时尤其注意稳定。"
+      },
+      {
+        "id": "catalog-smith-machine-bench-press",
+        "name": "史密斯卧推",
+        "muscle": "胸部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "水平推举。先空杠确认凳位和固定轨迹适合自己，再设置安全限位。"
+      },
+      {
+        "id": "catalog-landmine-press",
+        "name": "地雷杆推举",
+        "muscle": "肩部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肩上推举。固定杠杆一端，从身体前方沿斜上方推出，保持骨盆与胸廓稳定。"
+      },
+      {
+        "id": "catalog-chest-dip",
+        "name": "胸部双杠臂屈伸",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-weighted-dip",
+        "name": "负重双杠臂屈伸",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "weight-reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-machine-shoulder-press",
+        "name": "器械肩上推举",
+        "muscle": "肩部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "肩上推举。稳定坐姿或站姿，收紧腹部，负重位于肩部附近，手腕支撑在肘部上方。"
+      },
+      {
+        "id": "catalog-standing-dumbbell-press",
+        "name": "站姿哑铃推举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肩上推举。稳定坐姿或站姿，收紧腹部，负重位于肩部附近，手腕支撑在肘部上方。"
+      },
+      {
+        "id": "catalog-push-press",
+        "name": "杠铃借力推举",
+        "muscle": "肩部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肩上推举。用小幅屈膝后伸髋伸膝提供起始动力，再完成上推；先掌握严格推举和稳定接杠。"
+      },
+      {
+        "id": "catalog-machine-lateral-raise",
+        "name": "器械侧平举",
+        "muscle": "肩部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-cable-front-raise",
+        "name": "绳索前平举",
+        "muscle": "肩部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-plate-front-raise",
+        "name": "杠铃片前平举",
+        "muscle": "肩部",
+        "equipment": "杠铃片",
+        "kind": "weight-reps",
+        "description": "肩部平举。站稳或坐稳，负重置于身体两侧或前方，肘部微屈，肩部放松。"
+      },
+      {
+        "id": "catalog-bent-over-rear-delt-raise",
+        "name": "俯身哑铃侧平举",
+        "muscle": "肩部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-cable-rear-delt-fly",
+        "name": "绳索反向飞鸟",
+        "muscle": "肩部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-pendlay-row",
+        "name": "潘德雷划船",
+        "muscle": "背部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "划船。每次从地面稳定起拉再放回，保持背部与躯干位置，不用抬腰借力。"
+      },
+      {
+        "id": "catalog-inverted-row",
+        "name": "反向划船",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "划船。身体在横杆下形成稳定直线，脚部支撑地面；调整脚位改变难度。"
+      },
+      {
+        "id": "catalog-meadows-row",
+        "name": "梅多斯划船",
+        "muscle": "背部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "划船。侧身站于地雷杆端旁，以单臂拉向髋侧；先确认杠端握持和支撑稳定。"
+      },
+      {
+        "id": "catalog-single-arm-cable-row",
+        "name": "单臂绳索划船",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-wide-grip-lat-pulldown",
+        "name": "宽握高位下拉",
+        "muscle": "背部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "下拉。选择能保持前臂轨迹和肩部舒适的宽握距，不追求越宽越好。"
+      },
+      {
+        "id": "catalog-neutral-grip-pull-up",
+        "name": "对握引体向上",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。确认单杠稳定，握稳后以肩部可控的悬垂作为起点，腹部保持张力。"
+      },
+      {
+        "id": "catalog-assisted-chin-up",
+        "name": "辅助反握引体向上",
+        "muscle": "手臂",
+        "equipment": "器械",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。采用反握并使用稳定辅助；完成后先回到器械踏板，再离开支撑。"
+      },
+      {
+        "id": "catalog-weighted-chin-up",
+        "name": "负重反握引体向上",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "weight-reps",
+        "description": "引体与悬垂拉起。确认单杠稳定，握稳后以肩部可控的悬垂作为起点，腹部保持张力。"
+      },
+      {
+        "id": "catalog-rack-pull",
+        "name": "架上硬拉",
+        "muscle": "背部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "从地面硬拉。把杠铃放在稳定安全架上，从设定高度起拉；每次回放到架上后重新稳定。"
+      },
+      {
+        "id": "catalog-back-extension",
+        "name": "罗马椅背伸",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "背部伸展。在器械或地面上建立稳定支撑，腹部保持适度张力。"
+      },
+      {
+        "id": "catalog-dumbbell-shrug",
+        "name": "哑铃耸肩",
+        "muscle": "背部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "耸肩。站稳，负重自然垂于身体两侧，手臂伸直而不僵硬。"
+      },
+      {
+        "id": "catalog-goblet-squat",
+        "name": "高脚杯深蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "深蹲。双手把负重抱在胸前，保持靠近身体，避免肩部和手腕失去支撑。"
+      },
+      {
+        "id": "catalog-smith-machine-squat",
+        "name": "史密斯深蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-belt-squat",
+        "name": "腰带深蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "深蹲。把负重通过专用腰带连接于髋部，扶稳器械，避免腰带位置滑动。"
+      },
+      {
+        "id": "catalog-sumo-deadlift",
+        "name": "相扑硬拉",
+        "muscle": "臀部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "从地面硬拉。采用较宽站距，膝盖沿脚尖方向打开，双手在两腿之间握杠。"
+      },
+      {
+        "id": "catalog-trap-bar-deadlift",
+        "name": "六角杠硬拉",
+        "muscle": "臀部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "从地面硬拉。站在六角杠中间，握把位于身体两侧；确认左右把手高度一致。"
+      },
+      {
+        "id": "catalog-lying-leg-curl",
+        "name": "俯卧腿弯举",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-nordic-hamstring-curl",
+        "name": "北欧挺",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "腿弯举。固定脚踝后跪稳，肩髋膝保持一线缓慢向前下降，用双手准备接住地面。"
+      },
+      {
+        "id": "catalog-single-leg-romanian-deadlift",
+        "name": "单腿罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "髋铰链。以支撑腿髋部折叠，另一腿向后延伸，骨盆避免向外翻开；可扶稳定支撑。"
+      },
+      {
+        "id": "catalog-reverse-lunge",
+        "name": "负重后撤弓步蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-split-squat",
+        "name": "负重分腿蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-cable-kickback",
+        "name": "绳索后踢腿",
+        "muscle": "臀部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "髋伸展后踢。稳定站姿或四点支撑，收紧腹部，固定骨盆位置。"
+      },
+      {
+        "id": "catalog-hip-abduction-machine",
+        "name": "器械髋外展",
+        "muscle": "臀部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-single-leg-glute-bridge",
+        "name": "单腿臀桥",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-barbell-glute-bridge",
+        "name": "杠铃臀桥",
+        "muscle": "臀部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-dumbbell-glute-bridge",
+        "name": "哑铃臀桥",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-dumbbell-hip-thrust",
+        "name": "哑铃臀推",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-smith-machine-hip-thrust",
+        "name": "史密斯臀推",
+        "muscle": "臀部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-smith-machine-romanian-deadlift",
+        "name": "史密斯罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-dumbbell-romanian-deadlift",
+        "name": "哑铃罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-kettlebell-romanian-deadlift",
+        "name": "壶铃罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "壶铃",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-cable-pull-through",
+        "name": "绳索拉臀",
+        "muscle": "臀部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-machine-glute-kickback",
+        "name": "器械后踢腿",
+        "muscle": "臀部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "髋伸展后踢。稳定站姿或四点支撑，收紧腹部，固定骨盆位置。"
+      },
+      {
+        "id": "catalog-cable-standing-hip-abduction",
+        "name": "站姿绳索髋外展",
+        "muscle": "臀部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-cable-standing-hip-adduction",
+        "name": "站姿绳索髋内收",
+        "muscle": "腿部",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "髋内收。稳定坐姿或站姿，调整器械垫或脚踝带，骨盆保持稳定。"
+      },
+      {
+        "id": "catalog-hip-adduction-machine",
+        "name": "器械髋内收",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "髋内收。稳定坐姿或站姿，调整器械垫或脚踝带，骨盆保持稳定。"
+      },
+      {
+        "id": "catalog-smith-machine-bulgarian-split-squat",
+        "name": "史密斯保加利亚分腿蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-smith-machine-reverse-lunge",
+        "name": "史密斯后撤弓步蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-smith-machine-split-squat",
+        "name": "史密斯分腿蹲",
+        "muscle": "腿部",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-heel-elevated-goblet-squat",
+        "name": "脚跟垫高高脚杯深蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "深蹲。用稳定的小幅垫高支撑脚跟，脚掌保持完整接触，不使用会滑动的物品。"
+      },
+      {
+        "id": "catalog-dumbbell-sumo-squat",
+        "name": "哑铃相扑深蹲",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-dumbbell-sumo-deadlift",
+        "name": "哑铃相扑硬拉",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "从地面硬拉。让负重接近脚部中线，屈髋屈膝握稳，收紧腹部并稳定背部。"
+      },
+      {
+        "id": "catalog-front-foot-elevated-split-squat",
+        "name": "前脚垫高分腿蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。前脚踏在稳定台面上，以可控深度增加活动范围，后脚继续提供平衡。"
+      },
+      {
+        "id": "catalog-deficit-reverse-lunge",
+        "name": "增程后撤弓步蹲",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。从稳定垫高台面后撤，先找到落脚点再下降，不追求额外深度。"
+      },
+      {
+        "id": "catalog-dumbbell-lateral-lunge",
+        "name": "哑铃侧弓步蹲",
+        "muscle": "腿部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。向侧方迈步并向该侧屈髋屈膝，另一腿自然伸展；回程推开地面。"
+      },
+      {
+        "id": "catalog-dumbbell-curtsy-lunge",
+        "name": "哑铃交叉后撤蹲",
+        "muscle": "臀部",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "弓步与分腿蹲。后脚向斜后方交叉迈步，前侧膝盖仍沿脚尖方向；交叉幅度不必很大。"
+      },
+      {
+        "id": "catalog-landmine-squat",
+        "name": "地雷杆深蹲",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-landmine-romanian-deadlift",
+        "name": "地雷杆罗马尼亚硬拉",
+        "muscle": "腿部",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "髋铰链。站稳，膝部保留轻微弯曲，腹部收紧，负重接近身体。"
+      },
+      {
+        "id": "catalog-kettlebell-swing",
+        "name": "壶铃摆动",
+        "muscle": "臀部",
+        "equipment": "壶铃",
+        "kind": "weight-reps",
+        "description": "壶铃摆动。壶铃置于身体前方，屈髋握稳，腹部收紧。"
+      },
+      {
+        "id": "catalog-glute-focused-back-extension",
+        "name": "臀部主导罗马椅挺身",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "背部伸展。把活动集中在髋部折叠与伸展，上背保持稳定，不靠大幅腰部后仰。"
+      },
+      {
+        "id": "catalog-reverse-hyperextension",
+        "name": "反向挺身",
+        "muscle": "臀部",
+        "equipment": "器械",
+        "kind": "reps",
+        "description": "背部伸展。躯干贴稳台面，双腿从髋部抬起到可控位置，不借猛烈摆动。"
+      },
+      {
+        "id": "catalog-donkey-calf-raise",
+        "name": "驴式提踵",
+        "muscle": "小腿",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-leg-press-calf-raise",
+        "name": "腿举机提踵",
+        "muscle": "小腿",
+        "equipment": "器械",
+        "kind": "weight-reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-wall-sit",
+        "name": "靠墙静蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-jump-squat",
+        "name": "深蹲跳",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-incline-dumbbell-curl",
+        "name": "上斜哑铃弯举",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。背部贴稳上斜凳，上臂自然下垂，避免弯举时肩部前移。"
+      },
+      {
+        "id": "catalog-concentration-curl",
+        "name": "集中弯举",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-ez-bar-curl",
+        "name": "曲杆弯举",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-spider-curl",
+        "name": "蜘蛛弯举",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。胸部贴稳上斜凳，双臂垂在凳前，以肘部弯曲提起负重。"
+      },
+      {
+        "id": "catalog-rope-hammer-curl",
+        "name": "绳索锤式弯举",
+        "muscle": "手臂",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。握稳负重，躯干稳定，上臂放在身体两侧或指定支撑位置。"
+      },
+      {
+        "id": "catalog-drag-curl",
+        "name": "拖拉弯举",
+        "muscle": "手臂",
+        "equipment": "杠铃",
+        "kind": "weight-reps",
+        "description": "肘屈弯举。负重沿身体前方上移，肘部可向后移动；不是用身体后仰把杠甩起。"
+      },
+      {
+        "id": "catalog-rope-tricep-pushdown",
+        "name": "绳索绳把下压",
+        "muscle": "手臂",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-dumbbell-skull-crusher",
+        "name": "双哑铃仰卧臂屈伸",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-single-dumbbell-skullcrusher",
+        "name": "单哑铃仰卧臂屈伸",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-dumbbell-overhead-tricep-extension",
+        "name": "哑铃过头臂屈伸",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-single-arm-dumbbell-tricep-extension",
+        "name": "单臂哑铃臂屈伸",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。固定躯干，让上臂处在指定位置，肩部保持稳定。"
+      },
+      {
+        "id": "catalog-bench-dip",
+        "name": "凳上臂屈伸",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-tricep-kickback",
+        "name": "哑铃俯身臂屈伸",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "肘伸展。俯身稳定躯干，上臂靠近身体并保持，主要做肘部伸展。"
+      },
+      {
+        "id": "catalog-wrist-extension",
+        "name": "伸腕",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "前臂与腕部。前臂放稳在支撑上，腕部保留活动空间，握稳较轻负重。"
+      },
+      {
+        "id": "catalog-farmer-carry",
+        "name": "农夫行走",
+        "muscle": "手臂",
+        "equipment": "哑铃",
+        "kind": "duration",
+        "description": "负重行走。握稳负重站直，肩部自然下沉，腹部收紧。"
+      },
+      {
+        "id": "catalog-reverse-crunch",
+        "name": "反向卷腹",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-russian-twist",
+        "name": "俄罗斯转体",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "躯干旋转。稳定坐姿或站姿，腹部收紧，选择能控制的活动幅度。"
+      },
+      {
+        "id": "catalog-bicycle-crunch",
+        "name": "自行车卷腹",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "卷腹与躯干屈曲。仰卧交替屈膝与转动胸廓，肩部向对侧膝靠近，不用手拽颈部。"
+      },
+      {
+        "id": "catalog-mountain-climber",
+        "name": "登山跑",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-dead-bug",
+        "name": "死虫式",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "仰卧核心控制。仰卧，屈髋屈膝，腹部轻收，让腰背保持稳定。"
+      },
+      {
+        "id": "catalog-bird-dog",
+        "name": "鸟狗式",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "四点跪姿对侧伸展。双手在肩下、双膝在髋下，背部保持自然位置。"
+      },
+      {
+        "id": "catalog-pallof-press",
+        "name": "帕洛夫抗旋推",
+        "muscle": "核心",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "抗旋转。侧对阻力源站立或半跪，双手将握把放在胸前，骨盆保持正向。"
+      },
+      {
+        "id": "catalog-cable-woodchop",
+        "name": "绳索伐木",
+        "muscle": "核心",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "躯干旋转。稳定坐姿或站姿，腹部收紧，选择能控制的活动幅度。"
+      },
+      {
+        "id": "catalog-half-kneeling-pallof-press",
+        "name": "半跪姿帕洛夫推",
+        "muscle": "核心",
+        "equipment": "绳索",
+        "kind": "weight-reps",
+        "description": "抗旋转。侧对阻力源站立或半跪，双手将握把放在胸前，骨盆保持正向。"
+      },
+      {
+        "id": "catalog-cable-pallof-hold",
+        "name": "绳索抗旋保持",
+        "muscle": "核心",
+        "equipment": "绳索",
+        "kind": "duration",
+        "description": "抗旋转。侧对阻力源站立或半跪，双手将握把放在胸前，骨盆保持正向。"
+      },
+      {
+        "id": "catalog-hanging-knee-raise",
+        "name": "悬垂举膝",
+        "muscle": "核心",
+        "equipment": "单杠",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-captains-chair-knee-raise",
+        "name": "支撑举膝",
+        "muscle": "核心",
+        "equipment": "器械",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-decline-sit-up",
+        "name": "下斜仰卧起坐",
+        "muscle": "核心",
+        "equipment": "训练凳",
+        "kind": "reps",
+        "description": "卷腹与躯干屈曲。仰卧或在指定支撑上稳定骨盆，手臂不牵拉头颈。"
+      },
+      {
+        "id": "catalog-weighted-crunch",
+        "name": "负重卷腹",
+        "muscle": "核心",
+        "equipment": "杠铃片",
+        "kind": "weight-reps",
+        "description": "卷腹与躯干屈曲。仰卧或在指定支撑上稳定骨盆，手臂不牵拉头颈。"
+      },
+      {
+        "id": "catalog-weighted-russian-twist",
+        "name": "负重俄罗斯转体",
+        "muscle": "核心",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "躯干旋转。稳定坐姿或站姿，腹部收紧，选择能控制的活动幅度。"
+      },
+      {
+        "id": "catalog-dumbbell-side-bend",
+        "name": "哑铃体侧屈",
+        "muscle": "核心",
+        "equipment": "哑铃",
+        "kind": "weight-reps",
+        "description": "躯干旋转。单手握哑铃，躯干做可控的侧屈与回正，不向前后扭转。"
+      },
+      {
+        "id": "catalog-elliptical",
+        "name": "椭圆机",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-swimming",
+        "name": "游泳",
+        "muscle": "背部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-jump-rope",
+        "name": "跳绳",
+        "muscle": "小腿",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-assault-bike",
+        "name": "风阻单车",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-skierg",
+        "name": "滑雪机",
+        "muscle": "背部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-hiking",
+        "name": "徒步",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-treadmill-incline-walk",
+        "name": "跑步机爬坡走",
+        "muscle": "腿部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-battle-ropes",
+        "name": "战绳",
+        "muscle": "肩部",
+        "equipment": "有氧器械",
+        "kind": "duration",
+        "description": "有氧节奏。调整器械、路线或支撑装备，先以较低强度进入节奏。"
+      },
+      {
+        "id": "catalog-incline-push-up",
+        "name": "上斜俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-knee-push-up",
+        "name": "跪姿俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-wide-push-up",
+        "name": "宽距俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-diamond-push-up",
+        "name": "钻石俯卧撑",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-decline-push-up",
+        "name": "下斜俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-pike-push-up",
+        "name": "折刀俯卧撑",
+        "muscle": "肩部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "倒立支撑与推举。髋部抬高形成折刀姿势，让上身更接近垂直推举方向，头部不直接承重。"
+      },
+      {
+        "id": "catalog-feet-elevated-pike-push-up",
+        "name": "脚垫高折刀俯卧撑",
+        "muscle": "肩部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "倒立支撑与推举。脚放在稳定台面，逐渐提高上身支撑要求，先确认退出和落地空间。"
+      },
+      {
+        "id": "catalog-archer-push-up",
+        "name": "弓箭手俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。一侧屈肘承担主要负荷，另一侧手臂辅助伸展，左右分别练习。"
+      },
+      {
+        "id": "catalog-typewriter-push-up",
+        "name": "打字机俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。在低位把重心平稳从一侧移向另一侧，保持腹部稳定，难度较高。"
+      },
+      {
+        "id": "catalog-explosive-push-up",
+        "name": "爆发俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。只有稳定掌握普通俯卧撑后再尝试，轻柔落回双手并屈肘缓冲。"
+      },
+      {
+        "id": "catalog-hindu-push-up",
+        "name": "印度俯卧撑",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。从髋部抬高姿势向前下方移动再推起，腰背只进入舒适可控范围。"
+      },
+      {
+        "id": "catalog-scapular-push-up",
+        "name": "肩胛俯卧撑",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。手肘保持伸展，只做肩胛前伸与回收，幅度较小。"
+      },
+      {
+        "id": "catalog-push-up-shoulder-tap",
+        "name": "俯卧撑交替触肩",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-wall-push-up",
+        "name": "靠墙俯卧撑",
+        "muscle": "胸部",
+        "equipment": "墙面",
+        "kind": "reps",
+        "description": "俯卧撑。双手与肩部对齐或略宽，身体从头到支点保持稳定，收紧腹部与臀部。"
+      },
+      {
+        "id": "catalog-wall-walk",
+        "name": "靠墙爬行",
+        "muscle": "肩部",
+        "equipment": "墙面",
+        "kind": "reps",
+        "description": "倒立支撑与推举。在有足够空间、稳定支撑和保护条件下准备，先掌握相应支撑基础。"
+      },
+      {
+        "id": "catalog-wall-handstand-push-up",
+        "name": "靠墙倒立撑",
+        "muscle": "肩部",
+        "equipment": "墙面",
+        "kind": "reps",
+        "description": "倒立支撑与推举。在有足够空间、稳定支撑和保护条件下准备，先掌握相应支撑基础。"
+      },
+      {
+        "id": "catalog-handstand-push-up",
+        "name": "倒立撑",
+        "muscle": "肩部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "倒立支撑与推举。在有足够空间、稳定支撑和保护条件下准备，先掌握相应支撑基础。"
+      },
+      {
+        "id": "catalog-chair-dip",
+        "name": "椅上臂屈伸",
+        "muscle": "手臂",
+        "equipment": "椅子",
+        "kind": "reps",
+        "description": "双杠与凳上臂屈伸。握稳支撑，肩部保持主动支撑，双脚或辅助装置稳定。"
+      },
+      {
+        "id": "catalog-doorway-row",
+        "name": "门框划船",
+        "muscle": "背部",
+        "equipment": "门框",
+        "kind": "reps",
+        "description": "划船。只使用确认牢固且适合承重的固定点；普通门把手或松动门框不能作为支点。"
+      },
+      {
+        "id": "catalog-towel-row",
+        "name": "毛巾划船",
+        "muscle": "背部",
+        "equipment": "毛巾",
+        "kind": "reps",
+        "description": "划船。毛巾及其固定点必须能稳定承重，避免在无法确认牢固的门或把手上悬挂。"
+      },
+      {
+        "id": "catalog-prone-y-raise",
+        "name": "俯卧Y字上举",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-prone-t-raise",
+        "name": "俯卧T字展开",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-superman",
+        "name": "超人式",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "背部伸展。在器械或地面上建立稳定支撑，腹部保持适度张力。"
+      },
+      {
+        "id": "catalog-superman-hold",
+        "name": "超人式保持",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "背部伸展。在器械或地面上建立稳定支撑，腹部保持适度张力。"
+      },
+      {
+        "id": "catalog-reverse-snow-angel",
+        "name": "反向雪天使",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-dead-hang",
+        "name": "被动悬垂",
+        "muscle": "手臂",
+        "equipment": "单杠",
+        "kind": "duration",
+        "description": "悬垂与肩胛控制。确认单杠稳固，握稳后逐步把体重转移到手臂。"
+      },
+      {
+        "id": "catalog-active-hang",
+        "name": "主动悬垂",
+        "muscle": "背部",
+        "equipment": "单杠",
+        "kind": "duration",
+        "description": "悬垂与肩胛控制。确认单杠稳固，握稳后逐步把体重转移到手臂。"
+      },
+      {
+        "id": "catalog-scapular-pull-up",
+        "name": "肩胛引体",
+        "muscle": "背部",
+        "equipment": "单杠",
+        "kind": "reps",
+        "description": "悬垂与肩胛控制。确认单杠稳固，握稳后逐步把体重转移到手臂。"
+      },
+      {
+        "id": "catalog-negative-pull-up",
+        "name": "离心引体向上",
+        "muscle": "背部",
+        "equipment": "单杠",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。借助稳定台阶到达顶部，主要练习缓慢下降；不要反复跳起并突然落下。"
+      },
+      {
+        "id": "catalog-commando-pull-up",
+        "name": "突击队引体",
+        "muscle": "背部",
+        "equipment": "单杠",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。双手前后握在杆上，头部交替移至横杆两侧，避免身体旋转失控。"
+      },
+      {
+        "id": "catalog-l-sit-pull-up",
+        "name": "L形引体向上",
+        "muscle": "背部",
+        "equipment": "单杠",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。保持双腿在身体前方的L形姿势再拉起，核心与握力基础不足时先练普通引体。"
+      },
+      {
+        "id": "catalog-towel-pull-up",
+        "name": "毛巾引体向上",
+        "muscle": "背部",
+        "equipment": "毛巾",
+        "kind": "reps",
+        "description": "引体与悬垂拉起。只使用牢固单杠和可靠毛巾，握力要求较高；确保可平稳退出。"
+      },
+      {
+        "id": "catalog-bodyweight-squat",
+        "name": "徒手深蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-pistol-squat",
+        "name": "手枪蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。一条腿向前伸出，以另一腿做深蹲；可先扶固定支撑并降低深度。"
+      },
+      {
+        "id": "catalog-assisted-pistol-squat",
+        "name": "辅助单腿深蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-shrimp-squat",
+        "name": "虾式深蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。一侧腿屈膝放在身后，主要以支撑腿下蹲；可扶支撑逐步练习。"
+      },
+      {
+        "id": "catalog-cossack-squat",
+        "name": "哥萨克深蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。较宽站距向一侧下蹲，另一腿伸展，脚部方向随舒适活动度调整。"
+      },
+      {
+        "id": "catalog-sissy-squat",
+        "name": "西斯深蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。扶稳固定支撑，让膝部前移并保持髋部稳定；从很小幅度开始，膝部不适即停止。"
+      },
+      {
+        "id": "catalog-forward-lunge",
+        "name": "徒手前弓步蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-lateral-lunge",
+        "name": "徒手侧弓步蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-curtsy-lunge",
+        "name": "徒手交叉后撤蹲",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-skater-squat",
+        "name": "滑冰式单腿蹲",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-single-leg-box-squat",
+        "name": "单腿箱式深蹲",
+        "muscle": "腿部",
+        "equipment": "台阶",
+        "kind": "reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-step-down",
+        "name": "单腿下台阶",
+        "muscle": "腿部",
+        "equipment": "台阶",
+        "kind": "reps",
+        "description": "弓步与分腿蹲。双脚前后或侧向分开，找到能稳定的支撑宽度，腹部保持张力。"
+      },
+      {
+        "id": "catalog-calf-raise",
+        "name": "徒手提踵",
+        "muscle": "小腿",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-single-leg-calf-raise",
+        "name": "单腿提踵",
+        "muscle": "小腿",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "提踵。前脚掌稳稳支撑，脚踝与膝盖方向一致，扶稳支撑或器械。"
+      },
+      {
+        "id": "catalog-glute-bridge-march",
+        "name": "臀桥交替抬腿",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "臀桥与臀推。保持臀桥高度，交替抬离一只脚，先减少骨盆左右倾斜。"
+      },
+      {
+        "id": "catalog-frog-pump",
+        "name": "青蛙泵",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "臀桥与臀推。仰卧，双脚脚掌相对、膝盖自然向两侧打开；以髋部伸展完成小幅抬髋。"
+      },
+      {
+        "id": "catalog-donkey-kick",
+        "name": "跪姿后踢腿",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "髋伸展后踢。稳定站姿或四点支撑，收紧腹部，固定骨盆位置。"
+      },
+      {
+        "id": "catalog-fire-hydrant",
+        "name": "消防栓式髋外展",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "髋外展。四点跪姿，膝部保持弯曲，一侧大腿向外打开，躯干与骨盆尽量不转动。"
+      },
+      {
+        "id": "catalog-clamshell",
+        "name": "蚌式开合",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "髋外展。侧卧屈髋屈膝，双脚保持相接；上侧膝盖打开时骨盆不向后翻。"
+      },
+      {
+        "id": "catalog-hip-airplane",
+        "name": "髋部飞机式",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "活动度与舒展。单腿支撑做轻度髋铰链，骨盆缓慢向内外转动，躯干与支撑腿保持控制。"
+      },
+      {
+        "id": "catalog-side-lying-hip-abduction",
+        "name": "侧卧髋外展",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-side-lying-leg-raise",
+        "name": "侧卧举腿",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-lying-hamstring-walkout",
+        "name": "仰卧腿后侧走步",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-towel-hamstring-curl",
+        "name": "毛巾滑动腿弯举",
+        "muscle": "腿部",
+        "equipment": "毛巾",
+        "kind": "reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-stability-ball-hamstring-curl",
+        "name": "健身球腿弯举",
+        "muscle": "腿部",
+        "equipment": "健身球",
+        "kind": "reps",
+        "description": "腿弯举。按坐姿或俯卧姿势调整器械，膝部与转轴对齐，脚踝附近放稳阻力垫。"
+      },
+      {
+        "id": "catalog-banded-glute-bridge",
+        "name": "弹力带臀桥",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-banded-hip-thrust",
+        "name": "弹力带臀推",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "臀桥与臀推。上背或肩背稳定支撑，双脚踩稳，膝部弯曲，腹部收紧。"
+      },
+      {
+        "id": "catalog-banded-frog-pump",
+        "name": "弹力带青蛙泵",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "臀桥与臀推。脚掌相对、双膝自然外展，弹力带提供外侧阻力；骨盆稳定后再抬起。"
+      },
+      {
+        "id": "catalog-banded-clamshell",
+        "name": "弹力带蚌式开合",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。弹力带置于膝上，双脚相接，以髋部旋转打开上侧膝盖，避免滚动身体。"
+      },
+      {
+        "id": "catalog-banded-lateral-walk",
+        "name": "弹力带侧向行走",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。保持轻度屈髋屈膝，侧向短步移动，脚步回收时不让弹力带突然松弛。"
+      },
+      {
+        "id": "catalog-banded-monster-walk",
+        "name": "弹力带怪兽行走",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。双膝和脚尖方向一致，以斜前或斜后的短步移动，保持弹力带张力。"
+      },
+      {
+        "id": "catalog-banded-squat",
+        "name": "弹力带深蹲",
+        "muscle": "腿部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "深蹲。双脚站稳，选择舒适站距，脚掌三点支撑，收紧腹部。"
+      },
+      {
+        "id": "catalog-banded-donkey-kick",
+        "name": "弹力带跪姿后踢腿",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋伸展后踢。稳定站姿或四点支撑，收紧腹部，固定骨盆位置。"
+      },
+      {
+        "id": "catalog-banded-fire-hydrant",
+        "name": "弹力带消防栓式",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-banded-kickback",
+        "name": "弹力带站姿后踢腿",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋伸展后踢。稳定站姿或四点支撑，收紧腹部，固定骨盆位置。"
+      },
+      {
+        "id": "catalog-banded-standing-hip-abduction",
+        "name": "弹力带站姿髋外展",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-banded-seated-hip-abduction",
+        "name": "弹力带坐姿髋外展",
+        "muscle": "臀部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "髋外展。按坐姿、侧卧或站姿稳定支撑，保持骨盆与躯干稳定。"
+      },
+      {
+        "id": "catalog-band-pull-apart",
+        "name": "弹力带水平拉开",
+        "muscle": "背部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "后束与肩胛控制。固定躯干或让胸部贴稳支撑，双臂自然下垂，肘部保持轻微弯曲。"
+      },
+      {
+        "id": "catalog-banded-face-pull",
+        "name": "弹力带面拉",
+        "muscle": "背部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "面拉。将绳索或弹力带固定在脸部附近高度，站稳并保持轻度屈膝。"
+      },
+      {
+        "id": "catalog-banded-row",
+        "name": "弹力带划船",
+        "muscle": "背部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "划船。稳定站姿、坐姿或支撑姿势，保持脊柱自然位置，先让手臂向前延伸。"
+      },
+      {
+        "id": "catalog-banded-lat-pulldown",
+        "name": "弹力带高位下拉",
+        "muscle": "背部",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "下拉。调整座椅和大腿固定垫，握稳握把，胸部自然抬起，肩部保持放松。"
+      },
+      {
+        "id": "catalog-banded-pallof-press",
+        "name": "弹力带帕洛夫推",
+        "muscle": "核心",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "抗旋转。侧对阻力源站立或半跪，双手将握把放在胸前，骨盆保持正向。"
+      },
+      {
+        "id": "catalog-banded-woodchop",
+        "name": "弹力带伐木",
+        "muscle": "核心",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "躯干旋转。稳定坐姿或站姿，腹部收紧，选择能控制的活动幅度。"
+      },
+      {
+        "id": "catalog-banded-dead-bug",
+        "name": "弹力带死虫式",
+        "muscle": "核心",
+        "equipment": "弹力带",
+        "kind": "reps",
+        "description": "仰卧核心控制。仰卧，屈髋屈膝，腹部轻收，让腰背保持稳定。"
+      },
+      {
+        "id": "catalog-hollow-body-hold",
+        "name": "船式静止保持",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-hollow-rock",
+        "name": "船式摇摆",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-v-up",
+        "name": "V字两头起",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-flutter-kick",
+        "name": "仰卧交替打腿",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-lying-leg-raise",
+        "name": "仰卧举腿",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-toe-touch",
+        "name": "仰卧触脚尖",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "卷腹与躯干屈曲。仰卧或在指定支撑上稳定骨盆，手臂不牵拉头颈。"
+      },
+      {
+        "id": "catalog-heel-tap",
+        "name": "仰卧交替触脚跟",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "卷腹与躯干屈曲。仰卧或在指定支撑上稳定骨盆，手臂不牵拉头颈。"
+      },
+      {
+        "id": "catalog-plank-shoulder-tap",
+        "name": "平板交替触肩",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-plank-jack",
+        "name": "平板开合跳",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-bear-plank",
+        "name": "熊式支撑",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-bear-crawl",
+        "name": "熊爬",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-crab-walk",
+        "name": "蟹式行走",
+        "muscle": "手臂",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-inchworm",
+        "name": "毛毛虫爬行",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-l-sit-hold",
+        "name": "L形支撑保持",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-seated-knee-tuck",
+        "name": "坐姿收膝",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。在悬垂、支撑或仰卧姿势下稳定躯干，腹部保持张力。"
+      },
+      {
+        "id": "catalog-side-plank-hip-dip",
+        "name": "侧平板提髋",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "平板支撑与抗伸展。按动作版本用前臂或手掌支撑，脚部或膝部落稳。"
+      },
+      {
+        "id": "catalog-copenhagen-plank",
+        "name": "哥本哈根侧支撑",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "平板支撑与抗伸展。上侧腿放稳于凳面，前臂支撑，以内收肌与核心保持侧向姿势；先用屈膝短杠杆。"
+      },
+      {
+        "id": "catalog-dragon-flag",
+        "name": "龙旗",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "举腿与反向卷腹。上背稳定支撑，双手握牢固定点，以腹部控制躯干整体下降；先练屈膝版本。"
+      },
+      {
+        "id": "catalog-burpee",
+        "name": "波比跳",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-half-burpee",
+        "name": "半程波比",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-squat-thrust",
+        "name": "蹲撑跳",
+        "muscle": "核心",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-high-knees",
+        "name": "高抬腿",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-jumping-jack",
+        "name": "开合跳",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-skater-hop",
+        "name": "滑冰跳",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-lateral-shuffle",
+        "name": "侧向滑步",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-fast-feet",
+        "name": "小步快跑",
+        "muscle": "小腿",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-sprawl",
+        "name": "展腹撑跳",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "reps",
+        "description": "全身组合。站稳后屈髋屈膝，将双手放在身体前方地面。"
+      },
+      {
+        "id": "catalog-seal-jack",
+        "name": "海豹式开合跳",
+        "muscle": "胸部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "跳跃与敏捷。确认地面和周围空间安全，脚踝、膝、髋做好支撑准备。"
+      },
+      {
+        "id": "catalog-cat-cow-stretch",
+        "name": "猫牛式",
+        "muscle": "全身",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。四点跪姿，随呼吸缓慢拱背和回到舒适伸展，不甩头、不追求极限幅度。"
+      },
+      {
+        "id": "catalog-arm-circles",
+        "name": "肩部绕环",
+        "muscle": "肩部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-worlds-greatest-stretch",
+        "name": "弓步转体伸展",
+        "muscle": "全身",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。从稳定弓步支撑开始，胸廓朝前腿侧缓慢打开；骨盆与膝部保持可控。"
+      },
+      {
+        "id": "catalog-leg-swings-stretch",
+        "name": "腿部摆动",
+        "muscle": "全身",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-torso-twist-stretch",
+        "name": "站姿躯干转体",
+        "muscle": "全身",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-doorway-chest-stretch",
+        "name": "门框胸部拉伸",
+        "muscle": "胸部",
+        "equipment": "门框",
+        "kind": "duration",
+        "description": "活动度与舒展。前臂轻靠门框，身体缓慢向前移动直到胸部出现轻度牵拉，肩前侧不受挤压。"
+      },
+      {
+        "id": "catalog-childs-pose",
+        "name": "婴儿式",
+        "muscle": "背部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-kneeling-hip-flexor-stretch",
+        "name": "跪姿髋屈肌拉伸",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。一膝跪地、一脚在前，轻收骨盆后缓慢前移，不通过挺腰增加幅度。"
+      },
+      {
+        "id": "catalog-hamstring-stretch",
+        "name": "腘绳肌拉伸",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。稳定骨盆，以髋部前倾产生腿后侧牵拉，膝部可微屈，不用弓背够脚尖。"
+      },
+      {
+        "id": "catalog-standing-quad-stretch",
+        "name": "站姿股四头肌拉伸",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。扶稳支撑，屈膝让脚跟接近臀部，双膝尽量靠近，避免过度挺腰。"
+      },
+      {
+        "id": "catalog-seated-forward-fold-stretch",
+        "name": "坐姿前屈",
+        "muscle": "腿部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-cross-body-shoulder-stretch",
+        "name": "肩部交叉拉伸",
+        "muscle": "肩部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。先让身体处于稳定、舒适的支撑位置，放松呼吸。"
+      },
+      {
+        "id": "catalog-wall-calf-stretch",
+        "name": "靠墙小腿拉伸",
+        "muscle": "小腿",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。扶墙前后站立，后脚脚跟保持落地，身体缓慢前移，脚尖朝前。"
+      },
+      {
+        "id": "catalog-butterfly-stretch",
+        "name": "蝴蝶式拉伸",
+        "muscle": "臀部",
+        "equipment": "自重",
+        "kind": "duration",
+        "description": "活动度与舒展。坐稳，双脚相对，脊柱保持舒展，让双膝自然下落，不用手强压。"
+      }
+    ],
+    "templates": [
+      {
+        "id": "template-full",
+        "name": "全身基础",
+        "description": "原创基础模板 · 三类记录均可体验；组数、负重由你调整。",
+        "restSeconds": 90,
+        "items": [
+          {
+            "id": "template-full-item-1",
+            "exerciseId": "ex-squat",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-full-item-2",
+            "exerciseId": "ex-bench",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-full-item-3",
+            "exerciseId": "ex-row",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-full-item-4",
+            "exerciseId": "ex-plank",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          }
+        ],
+        "updatedAt": "2026-10-15T00:00:00.000Z"
+      },
+      {
+        "id": "template-upper",
+        "name": "上肢训练",
+        "description": "原创基础模板 · 推、拉与手臂，按实际能力填写重量。",
+        "restSeconds": 90,
+        "items": [
+          {
+            "id": "template-upper-item-1",
+            "exerciseId": "ex-bench",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-upper-item-2",
+            "exerciseId": "ex-lat",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-upper-item-3",
+            "exerciseId": "ex-press",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-upper-item-4",
+            "exerciseId": "ex-curl",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          }
+        ],
+        "updatedAt": "2026-10-15T00:00:00.000Z"
+      },
+      {
+        "id": "template-lower",
+        "name": "下肢与核心",
+        "description": "原创基础模板 · 下肢动作搭配核心训练。",
+        "restSeconds": 90,
+        "items": [
+          {
+            "id": "template-lower-item-1",
+            "exerciseId": "ex-squat",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-lower-item-2",
+            "exerciseId": "ex-rdl",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-lower-item-3",
+            "exerciseId": "ex-lunge",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          },
+          {
+            "id": "template-lower-item-4",
+            "exerciseId": "ex-crunch",
+            "sets": 3,
+            "weightKg": 0,
+            "reps": 10,
+            "durationSeconds": 30
+          }
+        ],
+        "updatedAt": "2026-10-15T00:00:00.000Z"
+      }
+    ],
+    "sessions": [
+      {
+        "id": "bff2612f-9169-4a2f-b467-ec2fc3e2b9d9",
+        "name": "全身基础",
+        "startedAt": "2026-10-18T14:50:15.633Z",
+        "updatedAt": "2026-10-18T14:50:15.938Z",
+        "date": "2026-10-18",
+        "timeZone": "Asia/Shanghai",
+        "status": "completed",
+        "pausedMs": 0,
+        "restUntil": null,
+        "restDuration": 90,
+        "exercises": [
+          {
+            "id": "793c3c18-04aa-4d30-b069-925c16518ba9",
+            "exercise": {
+              "id": "ex-squat",
+              "name": "杠铃深蹲",
+              "muscle": "腿部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录杠铃和杠铃片的总重量。以自己能控制的幅度完成，动作不适时停止。"
+            },
+            "sets": [
+              {
+                "id": "2c612a2d-2297-41a8-b1ec-ffc661c19edc",
+                "type": "warmup",
+                "weightKg": 60,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "completed"
+              },
+              {
+                "id": "fa0b81c0-aadc-4964-898c-151302bc063e",
+                "type": "work",
+                "weightKg": 65,
+                "reps": 8,
+                "durationSeconds": 30,
+                "status": "completed"
+              },
+              {
+                "id": "bf35a958-760e-4425-9ca6-d61f1ef5638b",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "62584616-06d0-4d5b-8500-a461c768a2e5",
+            "exercise": {
+              "id": "ex-bench",
+              "name": "杠铃卧推",
+              "muscle": "胸部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录包含杠的总重量。使用合适的保护装置，保持稳定后再完成每次动作。"
+            },
+            "sets": [
+              {
+                "id": "e451954a-b6a1-4086-9bca-0e1323e5bf13",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "79aef9fc-4038-4ef6-932f-72470b1b30fe",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "223cee2f-7464-4ce3-9591-f51d20c8c5a4",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "5d699d58-ffc3-46be-aa87-aa94156273d6",
+            "exercise": {
+              "id": "ex-row",
+              "name": "杠铃划船",
+              "muscle": "背部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录包含杠的总重量。保持躯干稳定，在可控制的幅度内完成。"
+            },
+            "sets": [
+              {
+                "id": "67c345fe-3c56-41c6-99a1-c3229fa0f358",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "aec661b1-e9a2-4fed-91f8-869bf01abb71",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "94c56055-1482-4811-846f-51d4d74df94b",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "e63a26e8-f068-4bd6-93a8-0e361124946f",
+            "exercise": {
+              "id": "ex-plank",
+              "name": "平板支撑",
+              "muscle": "核心",
+              "equipment": "自重",
+              "kind": "duration",
+              "description": "记录持续秒数，保持可控制的姿势与正常呼吸；不将秒数计入重量容量。"
+            },
+            "sets": [
+              {
+                "id": "844535a4-ed94-4d21-ac3b-2f799cf487e1",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "de891efe-5ad0-42a6-95bb-d444692ac78d",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "0eaa233e-b2a0-4f93-ae3f-bf4571478610",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          }
+        ],
+        "note": "",
+        "templateId": "template-full",
+        "finishedAt": "2026-10-18T14:50:15.866Z"
+      },
+      {
+        "id": "9e42d21c-0ebe-4793-8ea7-2e6c05148904",
+        "name": "全身基础",
+        "startedAt": "2026-10-18T14:50:16.282Z",
+        "updatedAt": "2026-10-18T14:50:16.384Z",
+        "date": "2026-10-18",
+        "timeZone": "Asia/Shanghai",
+        "status": "paused",
+        "pausedMs": 0,
+        "restUntil": null,
+        "restDuration": 90,
+        "exercises": [
+          {
+            "id": "d4eceaf1-ddda-4356-aaba-a483b1c57b61",
+            "exercise": {
+              "id": "ex-squat",
+              "name": "杠铃深蹲",
+              "muscle": "腿部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录杠铃和杠铃片的总重量。以自己能控制的幅度完成，动作不适时停止。"
+            },
+            "sets": [
+              {
+                "id": "567571a4-179b-4997-b1dd-429cc1464943",
+                "type": "work",
+                "weightKg": 70,
+                "reps": 6,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "e90a77d3-bbb1-45a7-a12f-ec649c66ad11",
+                "type": "work",
+                "weightKg": 65,
+                "reps": 8,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "f3a80212-68f9-491b-86e0-cf93c20138c1",
+                "type": "work",
+                "weightKg": 65,
+                "reps": 8,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "75b9e0fb-d3bd-432c-98ec-402f21ba9a65",
+            "exercise": {
+              "id": "ex-bench",
+              "name": "杠铃卧推",
+              "muscle": "胸部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录包含杠的总重量。使用合适的保护装置，保持稳定后再完成每次动作。"
+            },
+            "sets": [
+              {
+                "id": "b943444a-4297-4bc9-90a5-657a07147515",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "009ca93a-fb9b-40de-907e-d233bf10ea01",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "ffa9f02f-6cb7-4822-8a78-bc3aa5efa9e0",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "dba642ee-a63d-481e-819e-8132b7dd5967",
+            "exercise": {
+              "id": "ex-row",
+              "name": "杠铃划船",
+              "muscle": "背部",
+              "equipment": "杠铃",
+              "kind": "weight-reps",
+              "description": "记录包含杠的总重量。保持躯干稳定，在可控制的幅度内完成。"
+            },
+            "sets": [
+              {
+                "id": "77c69050-0b32-4b66-bebb-6959943040d1",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "6e50242a-0350-4f05-b135-cf7ce4dc09f8",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "493ec694-7bad-40e8-b66a-755f9559f701",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          },
+          {
+            "id": "ecf6feac-2343-419e-9a37-c6611e477bc0",
+            "exercise": {
+              "id": "ex-plank",
+              "name": "平板支撑",
+              "muscle": "核心",
+              "equipment": "自重",
+              "kind": "duration",
+              "description": "记录持续秒数，保持可控制的姿势与正常呼吸；不将秒数计入重量容量。"
+            },
+            "sets": [
+              {
+                "id": "49943373-ae2d-4e98-be41-9cbad3173f2a",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "67895d1c-4f99-4498-b698-23a4129bf6c8",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              },
+              {
+                "id": "51b3f0cb-df02-4f01-b7ef-7b2e92d261fd",
+                "type": "work",
+                "weightKg": 0,
+                "reps": 10,
+                "durationSeconds": 30,
+                "status": "pending"
+              }
+            ],
+            "note": ""
+          }
+        ],
+        "note": "",
+        "templateId": "template-full",
+        "pausedAt": 1792335016384
+      }
+    ],
+    "settings": {
+      "unit": "kg",
+      "theme": "dark",
+      "defaultRest": 90,
+      "autoRest": true,
+      "lastExportAt": null,
+      "favoriteExerciseIds": [
+        "ex-squat"
+      ]
+    },
+    "onboarded": true
+  }
+}

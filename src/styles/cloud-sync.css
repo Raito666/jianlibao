@@ -1,0 +1,13 @@
+.cloud-sync { min-width: 0; }
+.cloud-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); flex-wrap: wrap; }
+.cloud-heading h2 { margin: 0; }
+.cloud-status { color: var(--text-primary); font-size: var(--text-sm); overflow-wrap: anywhere; }
+.cloud-sync .data-actions { flex-wrap: wrap; gap: var(--space-2); }
+.cloud-sync .data-actions .btn { min-height: 44px; max-width: 100%; white-space: normal; }
+.cloud-key { width: 100%; min-width: 0; font-family: var(--font-num); font-size: var(--text-base); }
+.cloud-conflicts { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
+.cloud-conflict { min-width: 0; padding: var(--space-3); background: var(--surface-2); border: 1px solid var(--control-border); border-radius: var(--radius-md); }
+.cloud-conflict .field { margin-top: var(--space-3); }
+.cloud-versions { display: grid; gap: var(--space-2); margin-top: var(--space-2); }
+.cloud-versions summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; text-decoration: underline; text-underline-offset: 4px; }
+.cloud-versions pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 240px; overflow-y: auto; font-size: var(--text-sm); }

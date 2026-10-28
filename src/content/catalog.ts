@@ -1,0 +1,142 @@
+import catalog from './catalog.json' with { type: 'json' };
+import type { AppData, Exercise, ExerciseKind } from '../domain/types';
+import { techniques } from './guidance';
+import { quickGuidance } from './quick-guidance';
+import { supplementFor } from './external-guidance';
+
+export const ART_VERSION = catalog.version;
+export const MEDIA_CACHE = `jianlibao-media-${ART_VERSION}`;
+export const catalogEntries = catalog.entries;
+const byId = new Map(catalogEntries.map(entry => [entry.id, entry]));
+export const exerciseArt = (id: string, frame = 1) => { const entry = byId.get(id); return entry ? `/exercise-art/${ART_VERSION}/${entry.slug}/${entry.slug === 'pallof-press' ? 'diagram' : 'frame'}-${frame}.svg` : undefined; };
+export const mediaUrls = catalogEntries.flatMap(entry => [1, 2, 3].map(frame => exerciseArt(entry.id, frame)!));
+const variations: Record<string, string> = {
+  'incline-bench-press':'使用头侧抬高的上斜凳，负重落点随凳面角度调整，不为碰胸而过度展开肩部。',
+  'incline-dumbbell-press':'在上斜凳上稳定肩背；两只哑铃同步推起，手腕始终对齐前臂。',
+  'decline-bench-press':'先固定双脚与下斜凳位置，使用保护装置；起杠与回杠均在可控状态完成。',
+  'decline-dumbbell-press':'下斜凳上先固定双脚，哑铃进出起始位置时尤其注意稳定。',
+  'machine-chest-press':'调整座椅让握把位于胸部附近；背部贴稳靠垫，按器械既定轨迹推起。',
+  'smith-machine-bench-press':'先空杠确认凳位和固定轨迹适合自己，再设置安全限位。',
+  'close-grip-bench-press':'握距略窄于常规卧推，仍以手腕和肩部舒适为准；不必把双手挤在一起。',
+  'arnold-press':'从掌心朝向身体的起点，随上推自然旋转前臂；旋转幅度以肩部舒适为准。',
+  'landmine-press':'固定杠杆一端，从身体前方沿斜上方推出，保持骨盆与胸廓稳定。',
+  'push-press':'用小幅屈膝后伸髋伸膝提供起始动力，再完成上推；先掌握严格推举和稳定接杠。',
+  'upright-row':'握把沿身体前方抬起，肘部在舒适范围内带动；不强求超过肩高。',
+  'straight-arm-pulldown':'手肘只保留小幅弯曲，以肩关节带动上臂向身体两侧下压，不做反复屈肘。',
+  'pendlay-row':'每次从地面稳定起拉再放回，保持背部与躯干位置，不用抬腰借力。',
+  'chest-supported-row':'胸部贴稳斜凳或器械靠垫，避免每次拉动时抬离支撑。',
+  'meadows-row':'侧身站于地雷杆端旁，以单臂拉向髋侧；先确认杠端握持和支撑稳定。',
+  'inverted-row':'身体在横杆下形成稳定直线，脚部支撑地面；调整脚位改变难度。',
+  'doorway-row':'只使用确认牢固且适合承重的固定点；普通门把手或松动门框不能作为支点。',
+  'towel-row':'毛巾及其固定点必须能稳定承重，避免在无法确认牢固的门或把手上悬挂。',
+  'wide-grip-lat-pulldown':'选择能保持前臂轨迹和肩部舒适的宽握距，不追求越宽越好。',
+  'close-grip-lat-pulldown':'用窄距或对握把，让肘部向身体两侧下方靠近，躯干不过度后仰。',
+  'assisted-pull-up':'调整辅助装置并稳稳踏上支撑；辅助配重越大通常帮助越多，只记录完成次数。',
+  'assisted-chin-up':'采用反握并使用稳定辅助；完成后先回到器械踏板，再离开支撑。',
+  'negative-pull-up':'借助稳定台阶到达顶部，主要练习缓慢下降；不要反复跳起并突然落下。',
+  'commando-pull-up':'双手前后握在杆上，头部交替移至横杆两侧，避免身体旋转失控。',
+  'l-sit-pull-up':'保持双腿在身体前方的L形姿势再拉起，核心与握力基础不足时先练普通引体。',
+  'towel-pull-up':'只使用牢固单杠和可靠毛巾，握力要求较高；确保可平稳退出。',
+  'front-squat':'负重支撑在肩前，保持肘部与躯干支撑，握持方式以腕肩舒适为准。',
+  'hack-squat':'背部贴稳哈克机靠垫，先确认安全挡位，按固定轨迹完成。',
+  'belt-squat':'把负重通过专用腰带连接于髋部，扶稳器械，避免腰带位置滑动。',
+  'goblet-squat':'双手把负重抱在胸前，保持靠近身体，避免肩部和手腕失去支撑。',
+  'heel-elevated-goblet-squat':'用稳定的小幅垫高支撑脚跟，脚掌保持完整接触，不使用会滑动的物品。',
+  'sumo-deadlift':'采用较宽站距，膝盖沿脚尖方向打开，双手在两腿之间握杠。',
+  'trap-bar-deadlift':'站在六角杠中间，握把位于身体两侧；确认左右把手高度一致。',
+  'rack-pull':'把杠铃放在稳定安全架上，从设定高度起拉；每次回放到架上后重新稳定。',
+  'bulgarian-split-squat':'后脚放在稳定支撑上，前脚与凳子的距离以能保持平衡为准，主要以前腿发力。',
+  'walking-lunge':'每一步先落稳再下蹲，左右分别记录组数与次数，双手负重填写两只合计。',
+  'front-foot-elevated-split-squat':'前脚踏在稳定台面上，以可控深度增加活动范围，后脚继续提供平衡。',
+  'deficit-reverse-lunge':'从稳定垫高台面后撤，先找到落脚点再下降，不追求额外深度。',
+  'dumbbell-lateral-lunge':'向侧方迈步并向该侧屈髋屈膝，另一腿自然伸展；回程推开地面。',
+  'dumbbell-curtsy-lunge':'后脚向斜后方交叉迈步，前侧膝盖仍沿脚尖方向；交叉幅度不必很大。',
+  'single-leg-romanian-deadlift':'以支撑腿髋部折叠，另一腿向后延伸，骨盆避免向外翻开；可扶稳定支撑。',
+  'nordic-hamstring-curl':'固定脚踝后跪稳，肩髋膝保持一线缓慢向前下降，用双手准备接住地面。',
+  'hip-thrust':'上背靠稳训练凳，顶点让小腿接近竖直；视线与肋骨保持自然，避免用腰顶起。',
+  'frog-pump':'仰卧，双脚脚掌相对、膝盖自然向两侧打开；以髋部伸展完成小幅抬髋。',
+  'banded-frog-pump':'脚掌相对、双膝自然外展，弹力带提供外侧阻力；骨盆稳定后再抬起。',
+  'glute-bridge-march':'保持臀桥高度，交替抬离一只脚，先减少骨盆左右倾斜。',
+  'glute-focused-back-extension':'把活动集中在髋部折叠与伸展，上背保持稳定，不靠大幅腰部后仰。',
+  'reverse-hyperextension':'躯干贴稳台面，双腿从髋部抬起到可控位置，不借猛烈摆动。',
+  'clamshell':'侧卧屈髋屈膝，双脚保持相接；上侧膝盖打开时骨盆不向后翻。',
+  'banded-clamshell':'弹力带置于膝上，双脚相接，以髋部旋转打开上侧膝盖，避免滚动身体。',
+  'fire-hydrant':'四点跪姿，膝部保持弯曲，一侧大腿向外打开，躯干与骨盆尽量不转动。',
+  'banded-lateral-walk':'保持轻度屈髋屈膝，侧向短步移动，脚步回收时不让弹力带突然松弛。',
+  'banded-monster-walk':'双膝和脚尖方向一致，以斜前或斜后的短步移动，保持弹力带张力。',
+  'spider-curl':'胸部贴稳上斜凳，双臂垂在凳前，以肘部弯曲提起负重。',
+  'incline-dumbbell-curl':'背部贴稳上斜凳，上臂自然下垂，避免弯举时肩部前移。',
+  'preacher-curl':'上臂贴稳牧师凳垫面，肘部伸展到可控范围，不在底部突然反弹。',
+  'drag-curl':'负重沿身体前方上移，肘部可向后移动；不是用身体后仰把杠甩起。',
+  'tricep-kickback':'俯身稳定躯干，上臂靠近身体并保持，主要做肘部伸展。',
+  'dumbbell-side-bend':'单手握哑铃，躯干做可控的侧屈与回正，不向前后扭转。',
+  'bicycle-crunch':'仰卧交替屈膝与转动胸廓，肩部向对侧膝靠近，不用手拽颈部。',
+  'pike-push-up':'髋部抬高形成折刀姿势，让上身更接近垂直推举方向，头部不直接承重。',
+  'feet-elevated-pike-push-up':'脚放在稳定台面，逐渐提高上身支撑要求，先确认退出和落地空间。',
+  'archer-push-up':'一侧屈肘承担主要负荷，另一侧手臂辅助伸展，左右分别练习。',
+  'typewriter-push-up':'在低位把重心平稳从一侧移向另一侧，保持腹部稳定，难度较高。',
+  'explosive-push-up':'只有稳定掌握普通俯卧撑后再尝试，轻柔落回双手并屈肘缓冲。',
+  'hindu-push-up':'从髋部抬高姿势向前下方移动再推起，腰背只进入舒适可控范围。',
+  'scapular-push-up':'手肘保持伸展，只做肩胛前伸与回收，幅度较小。',
+  'pistol-squat':'一条腿向前伸出，以另一腿做深蹲；可先扶固定支撑并降低深度。',
+  'shrimp-squat':'一侧腿屈膝放在身后，主要以支撑腿下蹲；可扶支撑逐步练习。',
+  'cossack-squat':'较宽站距向一侧下蹲，另一腿伸展，脚部方向随舒适活动度调整。',
+  'sissy-squat':'扶稳固定支撑，让膝部前移并保持髋部稳定；从很小幅度开始，膝部不适即停止。',
+  'hip-airplane':'单腿支撑做轻度髋铰链，骨盆缓慢向内外转动，躯干与支撑腿保持控制。',
+  'dragon-flag':'上背稳定支撑，双手握牢固定点，以腹部控制躯干整体下降；先练屈膝版本。',
+  'copenhagen-plank':'上侧腿放稳于凳面，前臂支撑，以内收肌与核心保持侧向姿势；先用屈膝短杠杆。',
+  'cat-cow-stretch':'四点跪姿，随呼吸缓慢拱背和回到舒适伸展，不甩头、不追求极限幅度。',
+  'worlds-greatest-stretch':'从稳定弓步支撑开始，胸廓朝前腿侧缓慢打开；骨盆与膝部保持可控。',
+  'doorway-chest-stretch':'前臂轻靠门框，身体缓慢向前移动直到胸部出现轻度牵拉，肩前侧不受挤压。',
+  'kneeling-hip-flexor-stretch':'一膝跪地、一脚在前，轻收骨盆后缓慢前移，不通过挺腰增加幅度。',
+  'hamstring-stretch':'稳定骨盆，以髋部前倾产生腿后侧牵拉，膝部可微屈，不用弓背够脚尖。',
+  'standing-quad-stretch':'扶稳支撑，屈膝让脚跟接近臀部，双膝尽量靠近，避免过度挺腰。',
+  'wall-calf-stretch':'扶墙前后站立，后脚脚跟保持落地，身体缓慢前移，脚尖朝前。',
+  'butterfly-stretch':'坐稳，双脚相对，脊柱保持舒展，让双膝自然下落，不用手强压。',
+};
+const stepOverrides: Record<string, string[]> = {
+  'side-plank':['侧卧，以前臂在肩下支撑，双脚叠放或前后错开。','抬起髋部，让头、躯干和腿保持相对稳定的直线。','自然呼吸并保持；骨盆开始下沉或旋转时结束，之后换侧。'],
+  'side-plank-hip-dip':['先建立稳定侧平板，支撑肘在肩下，双腿和躯干保持对齐。','控制髋部向地面降低少许，肩部持续主动支撑。','用侧腹带动髋部抬回起点，避免身体向前后旋转。'],
+  'copenhagen-plank':['侧卧，以前臂支撑，上侧膝或脚踝放稳在训练凳上。','抬起髋部，用上侧大腿内侧和核心维持侧向直线。','保持呼吸，逐步放下；先用屈膝短杠杆降低难度，再换侧。'],
+  'v-up':['仰卧，双臂向头顶方向延伸，腹部收紧。','同时抬起上背与双腿，让手臂向脚部靠近。','缓慢放回至腰背仍可控的位置；可先屈膝降低难度。'],
+  'flutter-kick':['仰卧，腹部收紧，双腿离地到腰背仍能稳定的位置。','双腿交替做小幅上下打腿，膝部保持自然伸展。','维持呼吸与稳定骨盆，腰背开始明显反弓时结束。'],
+  'toe-touch':['仰卧，双腿向上抬起，膝部可微屈。','以腹部卷起上背，让双手向脚尖方向靠近。','缓慢放回肩背，不用颈部或甩臂借力。'],
+  'heel-tap':['仰卧屈膝、双脚落地，轻轻卷起上背。','躯干向一侧小幅侧屈，同侧手向脚跟靠近。','回到中间并换侧，肩颈保持放松，避免拽头。'],
+  'seated-knee-tuck':['坐在地面或稳定凳上，双手提供支撑，躯干保持可控后倾。','屈膝把双腿收向躯干，同时让腹部保持张力。','缓慢伸腿回程，在腰背仍能稳定的位置停止。'],
+  'l-sit-hold':['双手撑稳地面或双杠，肩部主动向下支撑。','抬起骨盆，让腿向前伸出形成L形；先用屈膝版本也可以。','保持正常呼吸，在肩部和核心还能控制时平稳落回。'],
+  'mountain-climber':['双手在肩下撑地，身体保持稳定的高位平板。','交替把一侧膝盖带向胸前，另一脚保持支撑。','控制换侧节奏，髋部不大幅起伏，不以速度牺牲支撑。'],
+  'plank-shoulder-tap':['双手撑稳高位平板，双脚适度分开，腹部收紧。','抬起一只手触碰对侧肩部，骨盆尽量不旋转。','放回后换手，先用缓慢节奏完成每一次重心转移。'],
+  'plank-jack':['双手或前臂支撑，建立稳定平板姿势。','双脚小幅向两侧跳开，再跳回起点。','肩髋保持稳定；若跳跃难以控制，可交替侧迈替代。'],
+  'bear-plank':['四点跪姿，双手在肩下，双膝在髋下，脚尖踩地。','把双膝抬离地面少许，保持背部和骨盆稳定。','正常呼吸并保持，不靠抬高臀部减轻核心支撑。'],
+  'scapular-push-up':['双手在肩下支撑，肘部保持伸展，躯干稳定。','让肩胛缓慢向后靠近，胸部略微下沉。','主动推地让肩胛向前展开，全程不反复屈肘。'],
+  'push-up-shoulder-tap':['先完成一次稳定俯卧撑，推回高位支撑。','一只手离地触碰对侧肩，再放回；另一侧同样完成。','核心保持张力，避免触肩时身体向一侧倒下。'],
+  'hindu-push-up':['双手双脚撑地，髋部抬高，保持可控支撑。','屈肘让胸部沿弧线向前下方移动，再推起上身。','在肩腰舒适的范围内回到起点，避免在腰部末端强压。'],
+  'typewriter-push-up':['双手宽于常规位置，腹部收紧，控制下降到低位。','在双手之间缓慢左右转移身体，保持胸髋整体稳定。','回到中间后推起；难度较高，先掌握弓箭手版本。'],
+  'wall-walk':['双手撑地、双脚接近墙面，确认上下墙路线安全。','双脚逐步向墙上移动，双手小步靠近墙面，始终主动推地。','在能控制的高度停下，再按相反顺序缓慢走回，不突然翻落。'],
+  'prone-t-raise':['俯卧或胸部贴稳支撑，双臂向两侧展开呈T形。','肩部远离耳朵，小幅抬起双臂，肩胛自然向后移动。','慢慢放回，颈部保持自然，不用挺腰抬高手臂。'],
+  'reverse-snow-angel':['俯卧，额头附近保持舒适支撑，双臂置于身体两侧。','轻抬双臂，沿身体两侧弧线缓慢移向头顶方向。','再按原路径回到两侧；不以耸肩或挺腰换取幅度。'],
+  'band-pull-apart':['双手握住完好的弹力带，手臂在胸前抬至舒适高度。','保持肘角基本不变，把双手向两侧拉开。','控制回到胸前，肩部远离耳朵，不靠挺腰绷开弹力带。'],
+  'rowing':['坐稳划船机，脚带固定，握稳把手并保持背部自然。','先蹬腿，再打开髋部，最后将把手拉向躯干附近。','回程先伸臂，再折髋、屈膝，保持有序节奏和规律呼吸。'],
+  'battle-ropes':['确认战绳固定点牢固，双脚站稳并轻度屈髋屈膝。','握稳绳端，以手臂交替或同步摆动产生波浪。','躯干维持稳定，以能控制的节奏持续，并按实际时间记录。'],
+  'wall-sit':['背部贴墙，双脚向前放在能稳定支撑的位置，脚掌保持落地。','缓慢降低身体至可控高度，保持膝盖与脚尖方向一致。','在该位置自然呼吸并计时，结束时平稳站起。'],
+  'ab-wheel':['双膝跪在软垫上握稳健腹轮，腹部收紧，肩部主动支撑。','缓慢向前滚动，只到腰背仍能稳定的位置。','以腹部和肩部控制回收，不塌腰、不用髋部突然后坐拉回。'],
+  'reverse-crunch':['仰卧屈膝，双手稳定支撑，腹部保持张力。','把膝盖带向躯干，让骨盆轻轻卷离地面。','缓慢把骨盆放回，再将双腿移至腰部仍可控的位置。'],
+  'bear-crawl':['双手在肩下、双膝在髋下，抬起膝盖少许。','对侧手脚以短步向前或向后移动，骨盆保持平稳。','维持低幅移动和正常呼吸，在姿势失控前停下。'],
+  'crab-walk':['坐姿屈膝，双手在身体后侧找到舒适支撑位置。','抬起髋部，以小步协调移动手脚，肩部保持主动支撑。','缓慢停止并坐回地面，手腕或肩部不适时改用其他动作。'],
+  'inchworm':['站立后轻屈膝，从髋部向前折叠，双手落在地面。','双手逐步向前走到稳定支撑，不让腰部塌下。','按舒适范围让双脚向手靠近，或将双手走回再站起。'],
+  'hollow-body-hold':['仰卧，腹部收紧，让腰背保持可控接触地面。','抬起肩部与双腿；腿伸得越远越难，先选屈膝版本。','保持姿势自然呼吸，腰背开始反弓时结束。'],
+  'hollow-rock':['先建立稳定船式姿势，腰背受控。','保持躯干形状，以很小幅度前后摇摆。','避免靠甩手脚获得幅度，无法保持形状时结束。'],
+  'scapular-pull-up':['握稳横杆建立主动悬垂，肘部基本伸直。','用肩胛下沉的小幅运动将身体稍微抬起。','缓慢恢复悬垂，保持手肘不主动弯曲。'],
+  'prone-y-raise':['俯卧或胸部贴稳凳面，双臂向斜前方摆成Y形。','肩部远离耳朵，小幅抬起手臂。','缓慢放回，保持颈部与背部自然对齐。'],
+};
+export function guideFor(exercise: Exercise) {
+  const entry = byId.get(exercise.id); if (!entry) return null;
+  const technique = techniques[entry.profile];
+  const specificSteps = stepOverrides[entry.slug] ?? stepOverrides[entry.slug.replace(/^banded-/, '')];
+  return { ...entry, ...technique, supplement: supplementFor(exercise.id), steps: specificSteps ?? technique.steps, quickSteps: specificSteps?.map(step => step.split(/[。；]/)[0] + '。') ?? quickGuidance[entry.profile] ?? technique.steps, variation: variations[entry.slug] ?? variations[entry.slug.replace(/^banded-/, '')] ?? `${entry.name}使用${entry.equipment}。${entry.equipment === '哑铃' ? '双侧同时动作记录两只负重合计；单侧左右分别记组。' : entry.equipment === '器械' || entry.equipment === '绳索' ? '先调整座椅、握把或固定点，再在可控轨迹内完成。' : entry.equipment === '弹力带' ? '确认弹力带完好和固定点牢固，回程保持对阻力的控制。' : '先建立稳定支撑，再按图解与步骤完成可控幅度。'}` };
+}
+export const builtinExercises: Exercise[] = catalogEntries.map(entry => ({ id: entry.id, name: entry.name, muscle: entry.muscle, equipment: entry.equipment, kind: entry.kind as ExerciseKind, description: `${techniques[entry.profile].title}。${variations[entry.slug] ?? techniques[entry.profile].steps[0]}` }));
+export function expandCatalog(data: AppData): AppData {
+  const ids = new Set(data.exercises.map(ex => ex.id)); const missing = builtinExercises.filter(ex => !ids.has(ex.id));
+  return missing.length ? { ...data, exercises: [...data.exercises, ...missing] } : data;
+}

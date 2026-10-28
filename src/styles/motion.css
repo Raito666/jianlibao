@@ -1,0 +1,117 @@
+/* Bounded feedback; interrupted animations always reveal the underlying state. */
+:root {
+  --duration-micro: 100ms;
+  --duration-local: 120ms;
+  --duration-page: 200ms;
+  --duration-full: 300ms;
+  --duration-enter: 240ms;
+  --duration-exit: 120ms;
+  --stagger-step: 20ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0.8, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.3, 0, 1, 1);
+  --page-inline: var(--space-10);
+  --page-top: var(--space-8);
+  --page-bottom: var(--layout-space-72);
+  --workout-top: 32px;
+  --workout-right: 40px;
+  --sidebar-inline: var(--space-5);
+  --sidebar-width: 220px;
+  --main-safe-left: 0px;
+}
+
+button, .btn, .nav-item, .icon-button, .set-row, .movement-card {
+  transition: background-color var(--duration-local) var(--ease-standard),
+    color var(--duration-local) var(--ease-standard),
+    border-color var(--duration-local) var(--ease-standard),
+    opacity var(--duration-local) var(--ease-standard),
+    transform var(--duration-micro) var(--ease-standard);
+}
+button:active:not(:disabled), .btn:active:not(:disabled) { transform: scale(0.97); }
+.completion-mark { display: inline-flex; align-items: center; justify-content: center; }
+.progress-fill { width: 100%; transform-origin: left center; transition: transform var(--duration-local) var(--ease-standard); }
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes modal-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes modal-out { from { opacity: 1; transform: none; } to { opacity: 0; transform: translateY(8px); } }
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@keyframes toast-out { from { opacity: 1; transform: translate(-50%, 0); } to { opacity: 0; transform: translate(-50%, 4px); } }
+.modal[data-motion-state="visible"] { animation: modal-in var(--duration-enter) var(--ease-enter) both; }
+.modal[data-motion-state="exiting"] { position: fixed; z-index: 100; pointer-events: none; animation: modal-out var(--duration-exit) var(--ease-exit) both; }
+.modal-exit-shade { position: fixed; inset: 0; z-index: 90; pointer-events: none; background: var(--overlay-backdrop); animation: fade-out var(--duration-exit) var(--ease-exit) both; }
+.modal[data-motion-state="visible"]::backdrop { animation: fade-in var(--duration-page) var(--ease-enter) both; }
+.modal[data-motion-state="exiting"]::backdrop { animation: fade-out var(--duration-exit) var(--ease-exit) both; }
+.toast[data-motion-state="visible"] { animation: toast-in 140ms var(--ease-enter) both; }
+.toast[data-motion-state="exiting"] { animation: toast-out 100ms var(--ease-exit) both; }
+
+::view-transition { pointer-events: none; }
+::view-transition-group(*) { animation-name: none; }
+::view-transition-old(root) { animation: fade-out var(--duration-exit) var(--ease-exit) both; mix-blend-mode: normal; }
+::view-transition-new(root) { animation: fade-in var(--duration-page) var(--ease-enter) both; mix-blend-mode: normal; }
+[data-motion-part="title"] { view-transition-name: page-title; }
+[data-motion-part="subtitle"] { view-transition-name: page-subtitle; }
+[data-motion-part="action"] { view-transition-name: page-action; }
+@keyframes page-part-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+/* Keep old snapshot layers alive until the native transition releases them.
+   Removing these layers with display:none crashes Windows WebKit during capture. */
+::view-transition-old(page-title), ::view-transition-old(page-subtitle), ::view-transition-old(page-action) { opacity: 0; animation: none; }
+::view-transition-new(page-title) { animation: page-part-in 200ms var(--ease-enter) both; }
+::view-transition-new(page-subtitle) { animation: page-part-in 200ms var(--ease-enter) 20ms both; }
+::view-transition-new(page-action) { animation: fade-in 140ms var(--ease-enter) 60ms both; }
+
+/* Windows WebKit crashes when a resize interrupts animated native snapshots.
+   Keep the native lifecycle but use the existing DOM entry choreography there. */
+:root[data-snapshot-motion="static"]::view-transition-old(*),
+:root[data-snapshot-motion="static"]::view-transition-new(*) { animation-name: none; }
+
+/* Four-sided insets augment existing responsive geometry; no duplicate footer inset. */
+body { overscroll-behavior-y: none; }
+.app-shell { grid-template-columns: calc(var(--sidebar-width) + var(--safe-left)) minmax(0, 1fr); }
+.main { padding: calc(var(--page-top) + var(--safe-top)) calc(var(--page-inline) + var(--safe-right)) calc(var(--page-bottom) + var(--safe-bottom)) calc(var(--page-inline) + var(--main-safe-left)); }
+.sidebar { top: var(--safe-top); height: calc(100dvh - var(--safe-top) - var(--safe-bottom)); padding: var(--space-10) var(--sidebar-inline) var(--space-6) calc(var(--sidebar-inline) + var(--safe-left)); overflow-y: auto; overflow-x: hidden; }
+.sidebar > * { flex-shrink: 0; }
+.skip-link { top: calc(var(--space-3) + var(--safe-top)); left: calc(var(--space-3) + var(--safe-left)); transform: translateY(calc(-100% - 24px - var(--safe-top))); }
+.main:has(.workout-view) > .topbar { top: calc(var(--workout-top) + var(--safe-top)); right: calc(var(--workout-right) + var(--safe-right)); }
+.mobile-nav { padding-inline: calc(var(--space-3) + var(--safe-left)) calc(var(--space-3) + var(--safe-right)); padding-bottom: calc(var(--space-2) + var(--safe-bottom)); }
+.toast { bottom: calc(28px + var(--safe-bottom)); left: calc(50% + (var(--safe-left) - var(--safe-right)) / 2); max-width: min(520px, calc(100vw - 32px - var(--safe-left) - var(--safe-right))); }
+dialog.modal, dialog.modal.modal-wide {
+  inset: var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left);
+  width: min(600px, calc(100vw - 24px - var(--safe-left) - var(--safe-right)));
+  max-height: min(86dvh, 900px, calc(100dvh - 24px - var(--safe-top) - var(--safe-bottom)));
+}
+dialog.modal.modal-wide { width: min(820px, calc(100vw - 24px - var(--safe-left) - var(--safe-right))); }
+.modal-body { touch-action: pan-y pinch-zoom; }
+.heatmap-scroller { touch-action: pan-x pinch-zoom; }
+
+@media (min-width: 1450px) {
+  :root { --page-inline: var(--space-12); --workout-right: 48px; }
+}
+@media (max-width: 1190px) {
+  :root { --page-inline: var(--space-8); --sidebar-inline: var(--space-4); --sidebar-width: 190px; --workout-right: 28px; }
+}
+@media (max-width: 760px), (max-width: 1000px) and (max-height: 500px) and (hover: none) and (pointer: coarse) {
+  :root { --page-inline: var(--space-6); --page-top: var(--space-6); --page-bottom: var(--layout-space-104); --workout-top: 25px; --workout-right: 22px; --main-safe-left: var(--safe-left); }
+  .toast { bottom: calc(85px + var(--safe-bottom)); }
+  dialog.modal, dialog.modal.modal-wide { width: calc(100vw - 24px - var(--safe-left) - var(--safe-right)); max-height: calc(100dvh - 24px - var(--safe-top) - var(--safe-bottom)); }
+  .modal-footer { padding-bottom: var(--space-4); }
+}
+@media (max-width: 480px) {
+  :root { --page-inline: var(--space-4); --workout-right: 16px; }
+}
+@media (max-width: 359px) {
+  :root { --page-inline: var(--space-3); --workout-right: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+  button, .btn, .nav-item, .icon-button, .set-row, .movement-card, .progress-fill {
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: var(--duration-micro);
+    transition-timing-function: var(--ease-standard);
+  }
+  button:active:not(:disabled), .btn:active:not(:disabled) { transform: none; }
+  .modal[data-motion-state="visible"], .toast[data-motion-state="visible"] { animation: fade-in var(--duration-micro) var(--ease-enter) both; }
+  .modal[data-motion-state="exiting"], .toast[data-motion-state="exiting"] { animation: fade-out var(--duration-micro) var(--ease-exit) both; }
+  ::view-transition-old(*), ::view-transition-new(*) { animation: none; }
+}

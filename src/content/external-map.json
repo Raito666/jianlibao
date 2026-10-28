@@ -1,0 +1,318 @@
+{
+  "source": {
+    "repository": "https://github.com/hasaneyldrm/exercises-dataset",
+    "revision": "7455efae41b330c265e7cd4b78dfa848e7ce5ebd",
+    "path": "data/exercises.json",
+    "license": "MIT",
+    "author": "Hasan Emir Yıldırım",
+    "changes": "健力宝核对动作和器械后改写为中文补充提示；原简洁/详细步骤保持。仅使用文本，不使用媒体。"
+  },
+  "entries": [
+    {
+      "exerciseId": "catalog-dumbbell-bench-press",
+      "sourceId": "0289",
+      "sourceName": "dumbbell bench press",
+      "hints": [
+        "双脚落稳，双手各持一只哑铃；先把肩背和哑铃稳定下来，再开始下降。",
+        "哑铃在胸部两侧受控移动，手腕保持在前臂上方；不必为凑固定角度而把肘部向外撑开。"
+      ]
+    },
+    {
+      "exerciseId": "ex-pushup",
+      "sourceId": "0662",
+      "sourceName": "push-up",
+      "hints": [
+        "双手略宽于肩，腹部与臀部共同维持身体直线，下降和推起时肩髋同步。",
+        "胸部接近支撑面后再推起；先选能保持直线的支撑高度，不通过塌腰完成次数。"
+      ]
+    },
+    {
+      "exerciseId": "ex-press",
+      "sourceId": "0405",
+      "sourceName": "dumbbell seated shoulder press",
+      "hints": [
+        "坐稳训练凳，先把两只哑铃稳定在肩部附近，保持手腕对齐前臂。",
+        "向上推起时不把腰部拱离支撑；回程缓慢落回能控制的位置。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-cable-lateral-raise",
+      "sourceId": "0178",
+      "sourceName": "cable lateral raise",
+      "hints": [
+        "先确认滑轮高度和站位，让拉索不碰到身体，再用较轻重量建立稳定起点。",
+        "上臂向侧方抬起，肘部保持自然微屈，肩颈放松；到舒适高度就控制回程。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-dumbbell-bent-over-row",
+      "sourceId": "0293",
+      "sourceName": "dumbbell bent over row",
+      "hints": [
+        "屈髋让躯干前倾，双膝微屈，双臂自然下垂；先稳定背部，再拉动哑铃。",
+        "双肘带动哑铃靠近躯干，肩胛自然回收；不通过反复抬起上身借力。"
+      ]
+    },
+    {
+      "exerciseId": "ex-pullup",
+      "sourceId": "0652",
+      "sourceName": "pull-up",
+      "hints": [
+        "正握单杠并建立主动悬垂，收紧腹部，避免摆腿获得起始动力。",
+        "屈肘让身体靠近横杆，再有控制地下降；以可控幅度为准，不用伸脖子凑高度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-assisted-pull-up",
+      "sourceId": "0017",
+      "sourceName": "assisted pull-up",
+      "hints": [
+        "先调整辅助配重，确认踏板或跪垫位置，再握牢把手进入支撑。",
+        "辅助配重通常越大越省力；上下都保持控制，结束时先回到器械踏板，再离开支撑。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-chin-up",
+      "sourceId": "1326",
+      "sourceName": "chin-up",
+      "hints": [
+        "反握横杆，掌心朝向自己，握距以腕肘舒适为准，先让悬垂姿势稳定。",
+        "收紧核心后屈肘上拉，再缓慢下降；不让身体在每次之间大幅摆动。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-shrug",
+      "sourceId": "0095",
+      "sourceName": "barbell shrug",
+      "hints": [
+        "握稳杠铃，双臂保持自然伸展，让肩部向上抬起，而非用屈肘把杠拉高。",
+        "在可控高度短暂停留后慢慢下放；颈部保持自然，不把肩膀向前后绕圈。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-cable-curl",
+      "sourceId": "0868",
+      "sourceName": "cable curl",
+      "hints": [
+        "面对滑轮站稳，掌心向上握住把手，上臂靠近身体两侧。",
+        "以屈肘带动把手向上，再慢慢放回；肘部不反复向前抬，躯干不后仰借力。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-hanging-leg-raise",
+      "sourceId": "0472",
+      "sourceName": "hanging leg raise",
+      "hints": [
+        "先握稳横杆，建立不摆动的悬垂，再用腹部控制抬腿。",
+        "抬到能稳定骨盆的高度即可，回程不突然落腿；可先用屈膝版本练习。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-dumbbell-fly",
+      "sourceId": "0308",
+      "sourceName": "dumbbell fly",
+      "hints": [
+        "躺稳后让两只哑铃在胸前相对，肘部始终保留自然弯曲。",
+        "双臂沿弧线打开再合拢，胸部出现舒适牵拉即可回程，不靠肩前侧承受过深幅度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-cable-front-raise",
+      "sourceId": "0162",
+      "sourceName": "cable front raise",
+      "hints": [
+        "握稳绳索把手，先收紧腹部并确认拉索路径，保持上身不后仰。",
+        "向前抬起上臂到舒适高度，再缓慢下放；不通过耸肩把负重抬得更高。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-inverted-row",
+      "sourceId": "0499",
+      "sourceName": "inverted row",
+      "hints": [
+        "只使用稳固、适合承重的横杆或悬挂装置，身体在横杆下方形成稳定直线。",
+        "把胸部拉向横杆，再控制下降；先调整脚位降低难度，避免髋部先抬起。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-dumbbell-shrug",
+      "sourceId": "0406",
+      "sourceName": "dumbbell shrug",
+      "hints": [
+        "双手各持哑铃置于身侧，保持肘部自然伸展，不靠弯臂完成动作。",
+        "肩部向上抬起后控制放回，颈部保持自然，避免快速绕肩或用身体弹起哑铃。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-trap-bar-deadlift",
+      "sourceId": "0811",
+      "sourceName": "trap bar deadlift",
+      "hints": [
+        "站在六角杠中央，确认左右握把同高；屈髋屈膝握稳，把手位于身体两侧。",
+        "脚掌稳定推地，髋膝共同伸展；站直后再屈髋屈膝回放，不用向后挺腰收尾。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-barbell-glute-bridge",
+      "sourceId": "1409",
+      "sourceName": "barbell glute bridge",
+      "hints": [
+        "仰卧屈膝、双脚落地，先把杠铃在髋部垫稳，并用双手防止滚动。",
+        "以臀部带动抬髋到肩髋膝接近一线，再慢慢放回；不以过度挺腰增加高度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-dumbbell-romanian-deadlift",
+      "sourceId": "1459",
+      "sourceName": "dumbbell romanian deadlift",
+      "hints": [
+        "双手各握哑铃，膝部保持自然微屈，主要通过髋部后移让躯干前倾。",
+        "哑铃贴近腿部移动，腿后侧出现牵拉且背部仍可稳定时就回程，不强求碰地。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-kettlebell-swing",
+      "sourceId": "0549",
+      "sourceName": "kettlebell swing",
+      "hints": [
+        "先做髋铰链，让壶铃从两腿之间回摆，再以伸髋带动壶铃向前。",
+        "双臂主要负责连接和控制壶铃，不把摆动做成用肩部向上提拉；结束时先减小摆幅再落地。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-jump-squat",
+      "sourceId": "0514",
+      "sourceName": "jump squat",
+      "hints": [
+        "先建立稳定下蹲，再向上跳起，选择能控制落地的小幅度。",
+        "脚掌落稳后屈髋屈膝缓冲；每次先恢复平衡，不急着连续追求跳高。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-reverse-crunch",
+      "sourceId": "0872",
+      "sourceName": "reverse crunch",
+      "hints": [
+        "仰卧屈膝抬腿，以腹部控制骨盆轻轻卷离地面。",
+        "回程先把骨盆缓慢放回，不甩腿或用双脚摆动获得幅度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-russian-twist",
+      "sourceId": "0687",
+      "sourceName": "russian twist",
+      "hints": [
+        "坐稳后轻度后倾，先让脚跟落地建立稳定支撑，双手放在胸前。",
+        "以可控幅度交替转动胸廓，骨盆尽量稳定；不靠快速甩臂完成左右移动。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-mountain-climber",
+      "sourceId": "0630",
+      "sourceName": "mountain climber",
+      "hints": [
+        "双手在肩下方支撑，交替将膝部向胸前靠近，保持肩部与骨盆稳定。",
+        "先用缓慢换侧找到重心，再在姿势不变的前提下提速，不以髋部大幅起伏换取次数。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-dead-bug",
+      "sourceId": "0276",
+      "sourceName": "dead bug",
+      "hints": [
+        "仰卧抬起双臂并屈髋屈膝，让腹部维持腰背和骨盆的稳定。",
+        "对侧手臂和腿缓慢伸展后回到起点，再换另一侧；伸得越远越难，腰部开始反弓前就缩短幅度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-decline-sit-up",
+      "sourceId": "0282",
+      "sourceName": "decline sit-up",
+      "hints": [
+        "确认下斜凳和足部固定装置可靠，先选较小倾角，双手可放在胸前。",
+        "在腹部能控制的幅度内卷起，再缓慢放回凳面；不拉头、不借助突然甩动起身。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-weighted-crunch",
+      "sourceId": "0832",
+      "sourceName": "weighted crunch",
+      "hints": [
+        "仰卧屈膝，把杠铃片或哑铃贴稳胸前，先确认负重不会滑动。",
+        "以腹部卷起上背后缓慢放回，不用甩动负重带起身体，也不追求整个人坐起。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-jump-rope",
+      "sourceId": "2612",
+      "sourceName": "jump rope",
+      "hints": [
+        "握稳绳柄，以手腕带动绳子，选择平整防滑且上方空间足够的位置。",
+        "小幅跳起、轻柔落地，膝踝保持缓冲；先保持节奏，再延长实际记录的持续时间。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-incline-push-up",
+      "sourceId": "0493",
+      "sourceName": "incline push-up",
+      "hints": [
+        "双手放在牢固的较高支撑面上，让头、肩、髋和脚保持稳定直线。",
+        "胸部向支撑面接近后推起；支撑越高通常越容易，可先用更高位置练习控制。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-diamond-push-up",
+      "sourceId": "0283",
+      "sourceName": "diamond push-up",
+      "hints": [
+        "双手在胸部附近靠拢，握距以手腕舒适为准，不必强行把手指挤成完全闭合的菱形。",
+        "收紧腹部和臀部，屈肘下降后整体推起；保持肩髋同步，不塌腰。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-decline-push-up",
+      "sourceId": "0279",
+      "sourceName": "decline push-up",
+      "hints": [
+        "双脚放在稳固、不会滑动的支撑上，双手撑地，先保持高位支撑稳定。",
+        "屈肘让胸部接近地面，再推回起点；先用较低脚部支撑，不通过腰部下沉增加幅度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-glute-bridge-march",
+      "sourceId": "3561",
+      "sourceName": "glute bridge march",
+      "hints": [
+        "先建立稳定臀桥，再抬起一只脚，让骨盆尽量保持水平。",
+        "脚放回并重新稳定后再换侧；不追求抬腿高度，骨盆开始扭转时就减小幅度。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-bear-crawl",
+      "sourceId": "3360",
+      "sourceName": "bear crawl",
+      "hints": [
+        "双手在肩下、双膝在髋下，将膝盖抬离地面少许。",
+        "对侧手脚以短步交替移动，核心保持稳定；不靠抬高臀部或左右大幅晃动完成移动。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-inchworm",
+      "sourceId": "1471",
+      "sourceName": "inchworm",
+      "hints": [
+        "站稳后从髋部向前折叠，膝部可微屈，让双手接触地面。",
+        "双手小步向前走到稳定高位平板，再按可控路线返回；不要为了伸直腿而强行弓背。"
+      ]
+    },
+    {
+      "exerciseId": "catalog-burpee",
+      "sourceId": "1160",
+      "sourceName": "burpee",
+      "hints": [
+        "从站姿下蹲，双手撑地后双脚移到稳定平板；是否加入俯卧撑按自己能控制的版本决定。",
+        "收脚站起后可小幅跳起并缓冲落地；需要降低难度时逐脚后撤和收回，先稳定再衔接。"
+      ]
+    }
+  ]
+}

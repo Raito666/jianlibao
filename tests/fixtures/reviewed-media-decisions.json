@@ -1,0 +1,679 @@
+[
+  {
+    "exerciseId": "catalog-leg-extension",
+    "name": "坐姿腿屈伸",
+    "english": "Leg Extension",
+    "equipment": "器械",
+    "wgerExerciseId": 369,
+    "images": [386],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-leg-curl",
+    "name": "器械腿弯举",
+    "english": "Leg Curl",
+    "equipment": "器械",
+    "wgerExerciseId": 364,
+    "images": [399],
+    "video": null
+  },
+  {
+    "exerciseId": "ex-plank",
+    "name": "平板支撑",
+    "english": "Plank",
+    "equipment": "自重",
+    "wgerExerciseId": 458,
+    "images": [346],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-cable-rear-delt-fly",
+    "name": "绳索反向飞鸟",
+    "english": "Cable Rear Delt Fly",
+    "equipment": "绳索",
+    "wgerExerciseId": 822,
+    "images": [216, 217],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-seated-knee-tuck",
+    "name": "坐姿收膝",
+    "english": "Seated Knee Tuck",
+    "equipment": "自重",
+    "wgerExerciseId": 1105,
+    "images": [344],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-decline-bench-press",
+    "name": "下斜杠铃卧推",
+    "english": "Decline Bench Press",
+    "equipment": "杠铃",
+    "wgerExerciseId": 185,
+    "images": [115, 116],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-lateral-raise",
+    "name": "哑铃侧平举",
+    "english": "Lateral Raise",
+    "equipment": "哑铃",
+    "wgerExerciseId": 348,
+    "images": [177, 178],
+    "video": 6
+  },
+  {
+    "exerciseId": "catalog-front-raise",
+    "name": "哑铃前平举",
+    "english": "Front Raise",
+    "equipment": "哑铃",
+    "wgerExerciseId": 256,
+    "images": [337],
+    "video": null
+  },
+  {
+    "exerciseId": "ex-pullup",
+    "name": "引体向上",
+    "english": "Pull-up",
+    "equipment": "自重",
+    "wgerExerciseId": 475,
+    "images": [323],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-chin-up",
+    "name": "反握引体向上",
+    "english": "Chin-up",
+    "equipment": "自重",
+    "wgerExerciseId": 152,
+    "images": [73, 75],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-front-squat",
+    "name": "杠铃前蹲",
+    "english": "Front Squat",
+    "equipment": "杠铃",
+    "wgerExerciseId": 257,
+    "images": [149, 150],
+    "video": null,
+    "reviewNote": "只采用明确的前蹲图片；视频27后视镜头无法确证杠位，排除。"
+  },
+  {
+    "exerciseId": "catalog-bulgarian-split-squat",
+    "name": "保加利亚分腿蹲",
+    "english": "Bulgarian Split Squat",
+    "equipment": "哑铃",
+    "wgerExerciseId": 988,
+    "images": [383],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-hammer-curl",
+    "name": "锤式弯举",
+    "english": "Hammer Curl",
+    "equipment": "哑铃",
+    "wgerExerciseId": 272,
+    "images": [47, 48],
+    "video": 51
+  },
+  {
+    "exerciseId": "catalog-dip",
+    "name": "双杠臂屈伸",
+    "english": "Dip",
+    "equipment": "自重",
+    "wgerExerciseId": 194,
+    "images": [211],
+    "video": 64
+  },
+  {
+    "exerciseId": "catalog-inverted-row",
+    "name": "反向划船",
+    "english": "Inverted Row",
+    "equipment": "自重",
+    "wgerExerciseId": 1198,
+    "images": [428],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-hindu-push-up",
+    "name": "印度俯卧撑",
+    "english": "Hindu Push-up",
+    "equipment": "自重",
+    "wgerExerciseId": 1080,
+    "images": [322],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-plank-shoulder-tap",
+    "name": "平板交替触肩",
+    "english": "Plank Shoulder Tap",
+    "equipment": "自重",
+    "wgerExerciseId": 1091,
+    "images": [334],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-kneeling-hip-flexor-stretch",
+    "name": "跪姿髋屈肌拉伸",
+    "english": "Kneeling Hip Flexor Stretch",
+    "equipment": "自重",
+    "wgerExerciseId": 1867,
+    "images": [635],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-dumbbell-bench-press",
+    "name": "平板哑铃卧推",
+    "english": "Dumbbell Bench Press",
+    "equipment": "哑铃",
+    "wgerExerciseId": 75,
+    "images": [113, 114],
+    "video": 17
+  },
+  {
+    "exerciseId": "catalog-skull-crusher",
+    "name": "杠铃仰卧臂屈伸",
+    "english": "Skull Crusher",
+    "equipment": "杠铃",
+    "wgerExerciseId": 246,
+    "images": [60, 61],
+    "video": 63
+  },
+  {
+    "exerciseId": "catalog-incline-dumbbell-press",
+    "name": "上斜哑铃卧推",
+    "english": "Incline Dumbbell Press",
+    "equipment": "哑铃",
+    "wgerExerciseId": 537,
+    "images": [105, 106],
+    "video": 24
+  },
+  {
+    "exerciseId": "catalog-incline-bench-press",
+    "name": "上斜杠铃卧推",
+    "english": "Incline Bench Press",
+    "equipment": "杠铃",
+    "wgerExerciseId": 538,
+    "images": [129, 130],
+    "video": 16
+  },
+  {
+    "exerciseId": "catalog-single-dumbbell-skullcrusher",
+    "name": "单哑铃仰卧臂屈伸",
+    "english": "Single Dumbbell Skullcrusher",
+    "equipment": "哑铃",
+    "wgerExerciseId": 245,
+    "images": [],
+    "video": 60
+  },
+  {
+    "exerciseId": "catalog-dumbbell-overhead-tricep-extension",
+    "name": "哑铃过头臂屈伸",
+    "english": "Dumbbell Overhead Tricep Extension",
+    "equipment": "哑铃",
+    "wgerExerciseId": 211,
+    "images": [],
+    "video": 57
+  },
+  {
+    "exerciseId": "catalog-tricep-kickback",
+    "name": "哑铃俯身臂屈伸",
+    "english": "Tricep Kickback",
+    "equipment": "哑铃",
+    "wgerExerciseId": 655,
+    "images": [],
+    "video": 76
+  },
+  {
+    "exerciseId": "catalog-overhead-tricep-extension",
+    "name": "绳索过头臂屈伸",
+    "english": "Overhead Tricep Extension",
+    "equipment": "绳索",
+    "wgerExerciseId": 659,
+    "images": [395],
+    "video": 55
+  },
+  {
+    "exerciseId": "catalog-close-grip-bench-press",
+    "name": "窄握杠铃卧推",
+    "english": "Close-Grip Bench Press",
+    "equipment": "杠铃",
+    "wgerExerciseId": 76,
+    "images": [15, 16],
+    "video": null
+  },
+  {
+    "exerciseId": "ex-row",
+    "name": "杠铃划船",
+    "english": "Barbell Row",
+    "equipment": "杠铃",
+    "wgerExerciseId": 83,
+    "images": [84, 90],
+    "video": null
+  },
+  {
+    "exerciseId": "ex-curl",
+    "name": "哑铃弯举",
+    "english": "Bicep Curl",
+    "equipment": "哑铃",
+    "wgerExerciseId": 92,
+    "images": [23, 24],
+    "video": 48
+  },
+  {
+    "exerciseId": "catalog-cable-curl",
+    "name": "绳索弯举",
+    "english": "Cable Curl",
+    "equipment": "绳索",
+    "wgerExerciseId": 95,
+    "images": [19, 20],
+    "video": 50
+  },
+  {
+    "exerciseId": "ex-lunge",
+    "name": "哑铃弓步蹲",
+    "english": "Walking Lunge",
+    "equipment": "哑铃",
+    "wgerExerciseId": 206,
+    "images": [121, 122, 123, 124],
+    "video": 33
+  },
+  {
+    "exerciseId": "catalog-rope-hammer-curl",
+    "name": "绳索锤式弯举",
+    "english": "Rope Hammer Curl",
+    "equipment": "绳索",
+    "wgerExerciseId": 275,
+    "images": [51, 52],
+    "video": 47
+  },
+  {
+    "exerciseId": "catalog-back-extension",
+    "name": "罗马椅背伸",
+    "english": "Back Extension",
+    "equipment": "自重",
+    "wgerExerciseId": 301,
+    "images": [11, 12],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-lying-leg-curl",
+    "name": "俯卧腿弯举",
+    "english": "Lying Leg Curl",
+    "equipment": "器械",
+    "wgerExerciseId": 365,
+    "images": [179, 180],
+    "video": 35
+  },
+  {
+    "exerciseId": "catalog-seated-leg-curl",
+    "name": "坐姿腿弯举",
+    "english": "Seated Leg Curl",
+    "equipment": "器械",
+    "wgerExerciseId": 366,
+    "images": [181, 182],
+    "video": 37
+  },
+  {
+    "exerciseId": "catalog-hack-squat",
+    "name": "哈克深蹲",
+    "english": "Hack Squat",
+    "equipment": "器械",
+    "wgerExerciseId": 375,
+    "images": [125, 126],
+    "video": 41
+  },
+  {
+    "exerciseId": "catalog-lying-leg-raise",
+    "name": "仰卧举腿",
+    "english": "Lying Leg Raise",
+    "equipment": "自重",
+    "wgerExerciseId": 377,
+    "images": [139, 140],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-seated-row",
+    "name": "坐姿绳索划船",
+    "english": "Seated Cable Row",
+    "equipment": "绳索",
+    "wgerExerciseId": 394,
+    "images": [143, 144],
+    "video": 1,
+    "videoWgerExerciseId": 512
+  },
+  {
+    "exerciseId": "catalog-t-bar-row",
+    "name": "T杠划船",
+    "english": "T-Bar Row",
+    "equipment": "器械",
+    "wgerExerciseId": 513,
+    "images": [77, 79],
+    "video": null
+  },
+  {
+    "exerciseId": "ex-press",
+    "name": "哑铃推举",
+    "english": "Dumbbell Seated Shoulder Press",
+    "equipment": "哑铃",
+    "wgerExerciseId": 567,
+    "images": [173, 174],
+    "video": 12
+  },
+  {
+    "exerciseId": "catalog-shrug",
+    "name": "杠铃耸肩",
+    "english": "Barbell Shrug",
+    "equipment": "杠铃",
+    "wgerExerciseId": 571,
+    "images": [43, 44],
+    "video": 69,
+    "videoWgerExerciseId": 570
+  },
+  {
+    "exerciseId": "catalog-dumbbell-shrug",
+    "name": "哑铃耸肩",
+    "english": "Dumbbell Shrug",
+    "equipment": "哑铃",
+    "wgerExerciseId": 572,
+    "images": [39, 40],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-cable-fly",
+    "name": "绳索夹胸",
+    "english": "Cable Fly",
+    "equipment": "绳索",
+    "wgerExerciseId": 323,
+    "images": [127, 128],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-hip-abduction-machine",
+    "name": "器械髋外展",
+    "english": "Hip Abduction Machine",
+    "equipment": "器械",
+    "wgerExerciseId": 12,
+    "images": [],
+    "video": 74,
+    "reviewNote": "父记录标题为内收，但膝外侧阻力垫及动作实际为髋外展；只对应本地髋外展，不能映射内收。"
+  },
+  {
+    "exerciseId": "catalog-bent-over-rear-delt-raise",
+    "name": "俯身哑铃侧平举",
+    "english": "Bent-Over Rear Delt Raise",
+    "equipment": "哑铃",
+    "wgerExerciseId": 82,
+    "images": [],
+    "video": 7,
+    "reviewNote": "视频为坐姿俯身哑铃侧平举；本地后束讲解未限定站姿，界面明确标注坐姿变体。",
+    "note": "本段示范为坐姿俯身版本。"
+  },
+  {
+    "exerciseId": "catalog-preacher-curl",
+    "name": "牧师凳弯举",
+    "english": "Preacher Curl",
+    "equipment": "器械",
+    "wgerExerciseId": 465,
+    "images": [],
+    "video": 54,
+    "reviewNote": "视频手柄有中央连杆及转轴联动，采用器械版本；同记录的自由杠铃图片不采用。"
+  },
+  {
+    "exerciseId": "catalog-face-pull",
+    "name": "绳索面拉",
+    "english": "Face Pull",
+    "equipment": "绳索",
+    "wgerExerciseId": 222,
+    "images": [],
+    "video": 79
+  },
+  {
+    "exerciseId": "catalog-hip-thrust",
+    "name": "杠铃臀推",
+    "english": "Hip Thrust",
+    "equipment": "杠铃",
+    "wgerExerciseId": 294,
+    "images": [],
+    "video": 72
+  },
+  {
+    "exerciseId": "catalog-smith-machine-squat",
+    "name": "史密斯深蹲",
+    "english": "Smith Machine Squat",
+    "equipment": "器械",
+    "wgerExerciseId": 341,
+    "images": [],
+    "video": 42
+  },
+  {
+    "exerciseId": "catalog-cable-lateral-raise",
+    "name": "绳索侧平举",
+    "english": "Cable Lateral Raise",
+    "equipment": "绳索",
+    "wgerExerciseId": 349,
+    "images": [],
+    "video": 5
+  },
+  {
+    "exerciseId": "catalog-leg-press",
+    "name": "器械腿举",
+    "english": "Leg Press",
+    "equipment": "器械",
+    "wgerExerciseId": 371,
+    "images": [],
+    "video": 44
+  },
+  {
+    "exerciseId": "catalog-assisted-pull-up",
+    "name": "辅助引体向上",
+    "english": "Assisted Pull-up",
+    "equipment": "器械",
+    "wgerExerciseId": 477,
+    "images": [],
+    "video": 70,
+    "reviewNote": "画面有助力跪垫，仅对应辅助引体，不对应普通自重引体。"
+  },
+  {
+    "exerciseId": "catalog-dumbbell-romanian-deadlift",
+    "name": "哑铃罗马尼亚硬拉",
+    "english": "Dumbbell Romanian Deadlift",
+    "equipment": "哑铃",
+    "wgerExerciseId": 507,
+    "images": [],
+    "video": 2,
+    "reviewNote": "原视频实际为哑铃版本，只对应本地哑铃罗马尼亚硬拉，不对应杠铃版本。"
+  },
+  {
+    "exerciseId": "catalog-machine-shoulder-press",
+    "name": "器械肩上推举",
+    "english": "Machine Shoulder Press",
+    "equipment": "器械",
+    "wgerExerciseId": 543,
+    "images": [],
+    "video": 11
+  },
+  {
+    "exerciseId": "catalog-seated-calf-raise",
+    "name": "坐姿提踵",
+    "english": "Seated Calf Raise",
+    "equipment": "器械",
+    "wgerExerciseId": 590,
+    "images": [],
+    "video": 13
+  },
+  {
+    "exerciseId": "catalog-calf-raise",
+    "name": "徒手提踵",
+    "english": "Calf Raise",
+    "equipment": "自重",
+    "wgerExerciseId": 622,
+    "images": [],
+    "video": 15,
+    "reviewNote": "仅取台阶上徒手提踵视频，排除同记录的哑铃图片，不对应站姿器械版本。"
+  },
+  {
+    "exerciseId": "catalog-bench-dip",
+    "name": "凳上臂屈伸",
+    "english": "Bench Dip",
+    "equipment": "自重",
+    "wgerExerciseId": 197,
+    "images": [35, 36],
+    "video": null,
+    "note": "本组示范为脚垫高的双凳版本。"
+  },
+  {
+    "exerciseId": "catalog-pec-deck",
+    "name": "蝴蝶机夹胸",
+    "english": "Pec Deck",
+    "equipment": "器械",
+    "wgerExerciseId": 135,
+    "images": [111, 112],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-dumbbell-fly",
+    "name": "哑铃飞鸟",
+    "english": "Dumbbell Fly",
+    "equipment": "哑铃",
+    "wgerExerciseId": 238,
+    "images": [212, 213],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-rear-delt-fly",
+    "name": "哑铃反向飞鸟",
+    "english": "Rear Delt Fly",
+    "equipment": "哑铃",
+    "wgerExerciseId": 828,
+    "images": [214, 215],
+    "video": null,
+    "note": "本组示范为俯卧凳面支撑版本。"
+  },
+  {
+    "exerciseId": "catalog-bird-dog",
+    "name": "鸟狗式",
+    "english": "Bird Dog",
+    "equipment": "自重",
+    "wgerExerciseId": 957,
+    "images": [271],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-heel-elevated-goblet-squat",
+    "name": "脚跟垫高高脚杯深蹲",
+    "english": "Heel-Elevated Goblet Squat",
+    "equipment": "哑铃",
+    "wgerExerciseId": 203,
+    "images": [328],
+    "video": null,
+    "note": "本图使用哑铃，并用杠铃片垫高脚跟。"
+  },
+  {
+    "exerciseId": "catalog-cable-kickback",
+    "name": "绳索后踢腿",
+    "english": "Cable Kickback",
+    "equipment": "绳索",
+    "wgerExerciseId": 1131,
+    "images": [397],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-close-grip-lat-pulldown",
+    "name": "窄握高位下拉",
+    "english": "Close-Grip Lat Pulldown",
+    "equipment": "绳索",
+    "wgerExerciseId": 1136,
+    "images": [402],
+    "video": null,
+    "note": "本图示范为对握窄把版本。"
+  },
+  {
+    "exerciseId": "catalog-one-arm-dumbbell-row",
+    "name": "单臂哑铃划船",
+    "english": "One-Arm Dumbbell Row",
+    "equipment": "哑铃",
+    "wgerExerciseId": 81,
+    "images": [410],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-standing-quad-stretch",
+    "name": "站姿股四头肌拉伸",
+    "english": "Standing Quad Stretch",
+    "equipment": "自重",
+    "wgerExerciseId": 1873,
+    "images": [641],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-decline-push-up",
+    "name": "下斜俯卧撑",
+    "english": "Decline Push-up",
+    "equipment": "自重",
+    "wgerExerciseId": 1112,
+    "images": [357],
+    "video": null
+  },
+  {
+    "exerciseId": "catalog-overhead-press",
+    "name": "杠铃站姿推举",
+    "english": "Overhead Press",
+    "equipment": "杠铃",
+    "wgerExerciseId": 418,
+    "images": [371],
+    "video": null,
+    "note": "本图为直杠站姿推举。"
+  },
+  {
+    "exerciseId": "catalog-wall-sit",
+    "name": "靠墙静蹲",
+    "english": "Wall Sit",
+    "equipment": "自重",
+    "wgerExerciseId": 1733,
+    "images": [601],
+    "video": null,
+    "note": "本图为背靠墙的徒手静态保持。"
+  },
+  {
+    "exerciseId": "catalog-single-leg-romanian-deadlift",
+    "name": "单腿罗马尼亚硬拉",
+    "english": "Single-Leg Romanian Deadlift",
+    "equipment": "哑铃",
+    "wgerExerciseId": 1736,
+    "images": [604],
+    "video": null,
+    "note": "本图为单手扶凳、另一手持单只哑铃的支撑版本。"
+  },
+  {
+    "exerciseId": "ex-rdl",
+    "name": "罗马尼亚硬拉",
+    "english": "Romanian Deadlift",
+    "equipment": "杠铃",
+    "wgerExerciseId": 507,
+    "video": 4,
+    "note": "本视频为自由杠铃罗马尼亚硬拉。",
+    "images": []
+  },
+  {
+    "exerciseId": "catalog-smith-machine-bench-press",
+    "name": "史密斯卧推",
+    "english": "Smith Machine Bench Press",
+    "equipment": "器械",
+    "wgerExerciseId": 73,
+    "video": 21,
+    "note": "本视频为固定导轨史密斯卧推；原wger父记录虽名为卧推，不能据此用于自由杠铃动作。",
+    "images": []
+  },
+  {
+    "exerciseId": "catalog-split-squat",
+    "name": "负重分腿蹲",
+    "english": "Split Squat",
+    "equipment": "哑铃",
+    "wgerExerciseId": 205,
+    "video": 32,
+    "note": "本视频为双手持哑铃、双脚保持原位的分腿蹲，不是行走或后撤弓步。",
+    "images": []
+  }
+]

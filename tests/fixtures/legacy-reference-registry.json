@@ -1,0 +1,943 @@
+{
+  "description": "Previous accepted 156-route production media registry, before videos 4/21/32/41. Test uses current shell/worker logic with this historical input, not a full historical application binary.",
+  "source": "previous-delivery-pre-change-production-sw",
+  "sourceWorkerSha256": "b5a066e059a6b8b308e788798493cc6cd9126915e60fe567dd1ae1d4e7640988",
+  "assets": [
+    {
+      "url": "/exercise-media/wger-bench-73-v1/push-position.png",
+      "mime": "image/png",
+      "bytes": 89870,
+      "sha256": "917e88d61aefa05cf46a98e44e41630343c0b2c821624ca0ac41c07dfedbceed"
+    },
+    {
+      "url": "/exercise-media/wger-bench-73-v1/lower-position.png",
+      "mime": "image/png",
+      "bytes": 82958,
+      "sha256": "8f7da56e008f2e08e04e27c8702bfa223587029ed2bf186cee27ad9c312269c5"
+    },
+    {
+      "url": "/exercise-media/wger-bench-73-v1/bench-press.mp4",
+      "mime": "video/mp4",
+      "bytes": 1422312,
+      "sha256": "d731f05f7eed78571d9f622fe99223b4139de190d029c1c82b48d13d9454017b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/369/image-386.jpg",
+      "mime": "image/jpeg",
+      "bytes": 20439,
+      "sha256": "9ab968e469c83d2df5e6d7b09b885c2551e586972edc8a38e4aa599683fc0bfd"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/364/image-399.png",
+      "mime": "image/png",
+      "bytes": 54829,
+      "sha256": "db656bf4f903cd18a867518a73b6bcc3eb878909b90117545169cb2b0a6eff9d"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/458/image-346.png",
+      "mime": "image/png",
+      "bytes": 239054,
+      "sha256": "006a934daf47e95ccf37a0482bce110b12b4f2f49c55f7b6d4fc97aba3e588d5"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/822/image-216.png",
+      "mime": "image/png",
+      "bytes": 36361,
+      "sha256": "1e905128cd4dea075295473be0dd259e7cb49ec6619bdd9eea26062f1c994895"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/822/image-217.png",
+      "mime": "image/png",
+      "bytes": 35637,
+      "sha256": "e1904c41fa58404366ea3f31980d96f06339c083ca6c228a0b0335f1d9440a90"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1105/image-344.png",
+      "mime": "image/png",
+      "bytes": 112011,
+      "sha256": "00aa2a27719d9aa234bb9c8135a290159320b2a312b5ba169a67a8d1a64865b4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/185/image-115.png",
+      "mime": "image/png",
+      "bytes": 49417,
+      "sha256": "50ea915603a7eb2b4e7bc31c47a597c04a7675df2ff3b05855fd782ac2dd9224"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/185/image-116.png",
+      "mime": "image/png",
+      "bytes": 45942,
+      "sha256": "199b5e823e91efadc30cf103f3b9dc994125a2b5b714ca77258a748d1a6c12ae"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/348/image-177.png",
+      "mime": "image/png",
+      "bytes": 218155,
+      "sha256": "acdcbbc93c7242d837f771d3422e26ad627da8faf2a3b133416fe886f8cc3cce"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/348/image-178.png",
+      "mime": "image/png",
+      "bytes": 292937,
+      "sha256": "7c31318be41a8ed82d6390d52eebda7ca280c18bb7727cf27f04c35c33eb3cdf"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/348/video-6.mp4",
+      "mime": "video/mp4",
+      "bytes": 1762640,
+      "sha256": "18503a75cdb42fb203d89322f81f741b1195493ce06c96a0231d6e98d1494104"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/348/poster-6.jpg",
+      "mime": "image/jpeg",
+      "bytes": 49211,
+      "sha256": "ff615afd3b20f95898bc69dccb3d0f159abd6f27d7b59e0d602019370be59dde"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/256/image-337.png",
+      "mime": "image/png",
+      "bytes": 34059,
+      "sha256": "a6a7add39abd69703266ba1fde86b89e57f2a8fc0434338dd6a008770893b794"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/475/image-323.jpg",
+      "mime": "image/jpeg",
+      "bytes": 91689,
+      "sha256": "cc494be8d8f520e4a883ff8b43b2e41da97dfd0a6474c1c16ea6c03fa1740c08"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/152/image-73.png",
+      "mime": "image/png",
+      "bytes": 80163,
+      "sha256": "82f66c212e0ab069d45c77771f4310a8b9b851c895d02b82375bb006d4d99977"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/152/image-75.png",
+      "mime": "image/png",
+      "bytes": 69896,
+      "sha256": "b0dae95e977eac46ecef539f79d4b114e4b41f61ab5f70be5c2a487875532cc0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/257/image-149.png",
+      "mime": "image/png",
+      "bytes": 398014,
+      "sha256": "4068499db0a18054ceb56c01e36f0d74c58bb9a3f0729e1d990acd21d8d84159"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/257/image-150.png",
+      "mime": "image/png",
+      "bytes": 389195,
+      "sha256": "4fb462d6f75e2e063b1f11469df38983921dea139fd06bc94183e917951d97e0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/988/image-383.jpg",
+      "mime": "image/jpeg",
+      "bytes": 12637,
+      "sha256": "f6c3ed36bb9bdf04eb3b283aa55942fcfe414104c19aeacfebbeae302a3e4a0d"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/272/image-47.png",
+      "mime": "image/png",
+      "bytes": 125929,
+      "sha256": "f9809143f121283705612669b9d98cd25432be0c9018fe1f79ed924bafec7801"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/272/image-48.png",
+      "mime": "image/png",
+      "bytes": 111214,
+      "sha256": "c5591af9a40419516da525aa108997807881e9c0ea4293b4b1f432c7b9862452"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/272/video-51.mp4",
+      "mime": "video/mp4",
+      "bytes": 524690,
+      "sha256": "d41540a9f5fb44f098531fdd92e24b04bfcf6d972101ad986140cad4821ac6b0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/272/poster-51.jpg",
+      "mime": "image/jpeg",
+      "bytes": 37402,
+      "sha256": "3bcbc1205c48d70e705053936cd7bc3712c0c39d66062181ad86dfa17870e0d0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/194/image-211.png",
+      "mime": "image/png",
+      "bytes": 198702,
+      "sha256": "63c92984aaa17b5f9fe49687eca502dd1530135a0b69bc2e7e29639abc046ea5"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/194/video-64.mp4",
+      "mime": "video/mp4",
+      "bytes": 1151550,
+      "sha256": "5693026148f356dfc2605f074765c3a1a69d3ee84a3642670084a1d0df66d371"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/194/poster-64.jpg",
+      "mime": "image/jpeg",
+      "bytes": 48387,
+      "sha256": "c4d7e9b6a0d80a889133ae9fcd67feeff299e3b0fceaa89bf4cf7e2fb1dad0c4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1198/image-428.jpg",
+      "mime": "image/jpeg",
+      "bytes": 12046,
+      "sha256": "44e58fb044b4c1c89edde97f66176a224a07844d5d23b5aed3ef38d6d180590a"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1080/image-322.webp",
+      "mime": "image/webp",
+      "bytes": 30604,
+      "sha256": "bdcc0c668a208d8b593e1c6e5b06e6fd99c99983bbb6a23f519f0e7ea24e5c9c"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1091/image-334.jpg",
+      "mime": "image/jpeg",
+      "bytes": 35633,
+      "sha256": "8d1a3f7057613936f4a9e99940f9efc7f027e9dfa79cb08eac13f4ae0c090f07"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1867/image-635.png",
+      "mime": "image/png",
+      "bytes": 479584,
+      "sha256": "0971847fa0d7347a453a64dff710e005583b5576aaaf3c5b4ae5b3e5ad2fe83d"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/75/image-113.png",
+      "mime": "image/png",
+      "bytes": 46779,
+      "sha256": "2d8aa760a9c81b98f79937c936c4819b5686a04a1c376a072061a5493da0a5d4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/75/image-114.png",
+      "mime": "image/png",
+      "bytes": 42062,
+      "sha256": "e80a5a428f4a0f0535b16968d7ac4f45aa00a5067181b225e4967a10d87d3aa3"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/75/video-17.mp4",
+      "mime": "video/mp4",
+      "bytes": 917359,
+      "sha256": "12342fe4b9a88f44b9e7ef448e6bd85a1942019fcd1c2e0b3eabce43e63f4f17"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/75/poster-17.jpg",
+      "mime": "image/jpeg",
+      "bytes": 33298,
+      "sha256": "e415b8f83a0ee4f59643072c2429035b1045e4ba3fd0ecc210abe7a145ec9f33"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/246/image-60.png",
+      "mime": "image/png",
+      "bytes": 65554,
+      "sha256": "b5ef24dff500cfd5cd2f098266b265680cf69f9783f96089ccef78f148f44ee7"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/246/image-61.png",
+      "mime": "image/png",
+      "bytes": 69966,
+      "sha256": "a852ec0ae7897fcf4e10ec992cc09ff78240a897ea6938a9196e83a67e2828eb"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/246/video-63.mp4",
+      "mime": "video/mp4",
+      "bytes": 645779,
+      "sha256": "d81a9d1292f4a5e34f47e557987f57b938dad987dc31b459be272432090fbcb7"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/246/poster-63.jpg",
+      "mime": "image/jpeg",
+      "bytes": 28830,
+      "sha256": "6a395e1cf6a0da9bd51ac62ad70aedac2058944f2344721c0612dcf7286dd574"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/537/image-105.png",
+      "mime": "image/png",
+      "bytes": 33815,
+      "sha256": "53b0545c1bbe7dc5d7db758d4e510f7331f4b73d1ec291d4760f1e6d421ad6f9"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/537/image-106.png",
+      "mime": "image/png",
+      "bytes": 36651,
+      "sha256": "e5a431a2475859436b32fcedefa316543c8dd2f72fb70e9980020e2ff3a21f34"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/537/video-24.mp4",
+      "mime": "video/mp4",
+      "bytes": 1784385,
+      "sha256": "6296168ba614c86357935022eabf0efc8522295614d6b11fa021529b03377d01"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/537/poster-24.jpg",
+      "mime": "image/jpeg",
+      "bytes": 41730,
+      "sha256": "9f87bfc561daad4b4ee4a11c2f8df5690cbc540e70fb1b847dd8739bc0b45629"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/538/image-129.png",
+      "mime": "image/png",
+      "bytes": 53518,
+      "sha256": "396b0bb512b64d0aba41c2093b7d246e74dc354589b6310e9b8bc2c98ecd767f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/538/image-130.png",
+      "mime": "image/png",
+      "bytes": 47607,
+      "sha256": "4f5b1d20639bc2abe522264f3fcf802d088d26ee6ba80a70a381cae9f34816ac"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/538/video-16.mp4",
+      "mime": "video/mp4",
+      "bytes": 1156145,
+      "sha256": "4eee3d421cfa6d08b08bad70450ad32b6ce1c2adfe61cd338fc4fd8e9668c7c1"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/538/poster-16.jpg",
+      "mime": "image/jpeg",
+      "bytes": 31922,
+      "sha256": "77e8cd7de52985403903e46480cb0d5d87cce37986b7181ae315ec8aaaf65333"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/245/video-60.mp4",
+      "mime": "video/mp4",
+      "bytes": 1237837,
+      "sha256": "27a73d146f2c96fd38732689096fc465c7f0e6a45182e2e9a2952bdea856059e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/245/poster-60.jpg",
+      "mime": "image/jpeg",
+      "bytes": 28957,
+      "sha256": "f138c7541a7e1a50a0a31fa9bae0df5f9ade8ea90763e0da0caae5aee3f6d6d5"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/211/video-57.mp4",
+      "mime": "video/mp4",
+      "bytes": 1912352,
+      "sha256": "cabe49a944c88fdb37a4db98330ee846ea25c4e3df8b7ac42fc54c017ae49bc2"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/211/poster-57.jpg",
+      "mime": "image/jpeg",
+      "bytes": 43730,
+      "sha256": "452b14985ee759610d7ddddbb6abd446d5cab7e0fdc02a2ed35cd6f99bd1e402"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/655/video-76.mp4",
+      "mime": "video/mp4",
+      "bytes": 730961,
+      "sha256": "27697165f0ef328b94a44fb7c1327248ec0e9c211c4f1735fbe735926b7d396b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/655/poster-76.jpg",
+      "mime": "image/jpeg",
+      "bytes": 37902,
+      "sha256": "27b24596aa1cb428d31cbec232d8d0e6d8ca86eaaf92973677498d1c1569d6c0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/659/image-395.jpg",
+      "mime": "image/jpeg",
+      "bytes": 9931,
+      "sha256": "3f830778d0ef8a890a2d31f83866c54571c8a1298f6bc26371e0fa6f88ec04f4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/659/video-55.mp4",
+      "mime": "video/mp4",
+      "bytes": 1464358,
+      "sha256": "67eb8b38303b7470a866a5893f0067a3c14ddd4f251ed679d7f3ec8cf3dea060"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/659/poster-55.jpg",
+      "mime": "image/jpeg",
+      "bytes": 49244,
+      "sha256": "ff4f1a4eeb5c234796a8ee0678213d4e15e0a5c3e177068e368f9342ec6b52bf"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/76/image-15.png",
+      "mime": "image/png",
+      "bytes": 85604,
+      "sha256": "9940d091c2248e520f21ed1541de500ae50b11d201ad61bcc092d13dd629c898"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/76/image-16.png",
+      "mime": "image/png",
+      "bytes": 77099,
+      "sha256": "f0dca9df7285fa03656afb4305defa727fea41318e3ac099ddc2be855b7a5b9c"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/83/image-84.png",
+      "mime": "image/png",
+      "bytes": 55733,
+      "sha256": "53fe36407f4f1601ead650fba892ae9ef29a3d524724065484f01eecb3efe2d2"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/83/image-90.png",
+      "mime": "image/png",
+      "bytes": 49088,
+      "sha256": "f4dcd22bf2b89b2b9f569ada23ea3efe42d14331e6394d18c17789a09c56b06e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/92/image-23.png",
+      "mime": "image/png",
+      "bytes": 123420,
+      "sha256": "9db73cea5e78b57534ee38a72b8a92cc2bdb0f882f7ace4d8f3bb6354d9909b4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/92/image-24.png",
+      "mime": "image/png",
+      "bytes": 114031,
+      "sha256": "e1ac408080bfb00b4cc97665df0029d5d66207fb758857bbac0afafb5ff58881"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/92/video-48.mp4",
+      "mime": "video/mp4",
+      "bytes": 557185,
+      "sha256": "b7f4542f5243e25699fb8b7a89b7aaac73d198898e6adcaa2d273daf96d55c80"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/92/poster-48.jpg",
+      "mime": "image/jpeg",
+      "bytes": 38191,
+      "sha256": "c32d640ed0b4f640f9e02e9d7331a962291df967fd32eb34d9131b4900601b9a"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/95/image-19.png",
+      "mime": "image/png",
+      "bytes": 131663,
+      "sha256": "417451559002fbd11eccfaeb26e93655beda6daddd50215102c512a1f95528e7"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/95/image-20.png",
+      "mime": "image/png",
+      "bytes": 132329,
+      "sha256": "5d26ae966437c6769feabc30175c5a165c91cdf8bbb77590c644f17d551ae549"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/95/video-50.mp4",
+      "mime": "video/mp4",
+      "bytes": 633493,
+      "sha256": "deed0280ca3ddf61293df8029a5b42323a8f39c91f51b5048585675536a91193"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/95/poster-50.jpg",
+      "mime": "image/jpeg",
+      "bytes": 38945,
+      "sha256": "fc18a79ee2cdc84b21d846a6b3ee866164f316f9b49a7b10b95f95397b38db4c"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/image-121.png",
+      "mime": "image/png",
+      "bytes": 40250,
+      "sha256": "07387896308a88dec1c1f9644be3eaa6bca9485c9574c56ce7c18ddd02b9751d"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/image-122.png",
+      "mime": "image/png",
+      "bytes": 36721,
+      "sha256": "e804f4c754e3b28e5887352cf5e993fbcb8384d4e88b06b83849ab2feb8d1443"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/image-123.png",
+      "mime": "image/png",
+      "bytes": 40497,
+      "sha256": "b2b354b4c215f0265277b848a5530d43be302787bc8a18f3b5c4faaf4fb3ebbf"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/image-124.png",
+      "mime": "image/png",
+      "bytes": 37369,
+      "sha256": "435883b528f8e3065f47bffbb53be83abb013b8df3ad14b655c8c124aae22136"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/video-33.mp4",
+      "mime": "video/mp4",
+      "bytes": 894056,
+      "sha256": "a4c686a09955a98d8969cae3f030367d4bb78636e82531b44dac9d06099f6e80"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/206/poster-33.jpg",
+      "mime": "image/jpeg",
+      "bytes": 38655,
+      "sha256": "80350730eee9383dc58b35030ebfb43f2388c68c8df9471dfc9774dec5cad1d3"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/275/image-51.png",
+      "mime": "image/png",
+      "bytes": 132105,
+      "sha256": "5d0e536b188619f6203f7e7071a4384809b8fdba58fc9a8516fca4a7bcfed68e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/275/image-52.png",
+      "mime": "image/png",
+      "bytes": 127860,
+      "sha256": "67f1a65795579fb774ace42fca87c5ad6f6e07f3f7e21f2b0b744034ad4e6ffa"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/275/video-47.mp4",
+      "mime": "video/mp4",
+      "bytes": 813722,
+      "sha256": "0b9d57a909e81a1b949f1a1a02171c46e30e7c33410d9464c31b5b12106bf037"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/275/poster-47.jpg",
+      "mime": "image/jpeg",
+      "bytes": 38315,
+      "sha256": "d6e5c2054ff00bfc0629fc98ebfa4c7ff889bb29c8595e23a641d77f599a94dd"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/301/image-11.png",
+      "mime": "image/png",
+      "bytes": 78440,
+      "sha256": "f51d44fa00847a73363751c07c9d7d710ce3cc3c6fd7bf5d7417aa32c5b807da"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/301/image-12.png",
+      "mime": "image/png",
+      "bytes": 67379,
+      "sha256": "fd425ea7ccaa5905f9ceadb03cbc4ecc9bb5664547b1c09b9395ffc48019d940"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/365/image-179.png",
+      "mime": "image/png",
+      "bytes": 155142,
+      "sha256": "e8da278d94c2c7fe5feed8aab3d4666aac55f699f19bad38c086cea2208c98ad"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/365/image-180.png",
+      "mime": "image/png",
+      "bytes": 166471,
+      "sha256": "c9476f7baeaa61ea503abd07219be240eaa7cd443040447da004485d7f0dc1e4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/365/video-35.mp4",
+      "mime": "video/mp4",
+      "bytes": 1060042,
+      "sha256": "14cd0dc46a658c6d79d9c2802e3b731ea5e4796159dc9bd2fbca49dab5fcf397"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/365/poster-35.jpg",
+      "mime": "image/jpeg",
+      "bytes": 43478,
+      "sha256": "4b0b051aba4a8ab008dab3aab4a202830ed5957a73dc1a9e3857a24e311e87b2"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/366/image-181.png",
+      "mime": "image/png",
+      "bytes": 244033,
+      "sha256": "d13ff4f8aa04ab62b8ed1b42a9493307bd4077eaf4f84da57d4cc7dbe28ac372"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/366/image-182.png",
+      "mime": "image/png",
+      "bytes": 241386,
+      "sha256": "9985758b68e0d1b8eddbe5b5e5f3ede345005b21eca337e74245b13bd02c8593"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/366/video-37.mp4",
+      "mime": "video/mp4",
+      "bytes": 1766525,
+      "sha256": "7721ca5a2bb11fb3af033ae4d3de94aaf448d6d318959552d0044691bce063dd"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/366/poster-37.jpg",
+      "mime": "image/jpeg",
+      "bytes": 39376,
+      "sha256": "46073652aa1fdae23f348b9978deb0a6ff7bbc5afe2ed2fc26c713ce01f85151"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/375/image-125.png",
+      "mime": "image/png",
+      "bytes": 315750,
+      "sha256": "02c9fff9d2a11b4c1125cec4f94e4edac03f4ab07d5d928dad9e13f96e2778b9"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/375/image-126.png",
+      "mime": "image/png",
+      "bytes": 299116,
+      "sha256": "c4c127ee73627ca543d0441b4df282d6a798134afa817d872da06003d7cd1fd2"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/377/image-139.png",
+      "mime": "image/png",
+      "bytes": 45566,
+      "sha256": "d8db66ef5669f82ad44d36ddd16bc55eb6d30ca4b7d62038ec0db2db5f921d72"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/377/image-140.png",
+      "mime": "image/png",
+      "bytes": 50035,
+      "sha256": "0f7edf217baf7ce2c703605bb28186a846ac0e10ea19127a13ba6651e69cd47b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/394/image-143.png",
+      "mime": "image/png",
+      "bytes": 36165,
+      "sha256": "6e52bfc5f0c486c0fb1ea40fdaf60493e92fb36b033a414a1de3c696936fac7f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/394/image-144.png",
+      "mime": "image/png",
+      "bytes": 34053,
+      "sha256": "f3d34798088421f3fbdc54bae7b7f0e04059f50ace657e9b96bbc0c7e6404731"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/394/video-1.mp4",
+      "mime": "video/mp4",
+      "bytes": 655413,
+      "sha256": "52a2e128d6a1c4f891518606d9cbaf1792edb0ca0c3f7944ca28de915836c36a"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/394/poster-1.jpg",
+      "mime": "image/jpeg",
+      "bytes": 39204,
+      "sha256": "20323196c673133525cda74e2f031ef78f5e19a0026832bc79a7670595aa1c1c"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/513/image-77.png",
+      "mime": "image/png",
+      "bytes": 94676,
+      "sha256": "480b7c5b2374d10dcf41eb6ad173e77c5feccc825b85b24ce8a388b0e0377111"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/513/image-79.png",
+      "mime": "image/png",
+      "bytes": 97399,
+      "sha256": "02d3b4f083396694b6b8ee0bac486fdde646c073358771a3b4381b4046691560"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/567/image-173.png",
+      "mime": "image/png",
+      "bytes": 232980,
+      "sha256": "d3fbf6690df84e743ae090164f133e84c5595a54a892d80532e0af4cb543f670"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/567/image-174.png",
+      "mime": "image/png",
+      "bytes": 259018,
+      "sha256": "42aa5e8286d57566ac5e5239013deddb48201c64656f13b4d26b91f6e33182ef"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/567/video-12.mp4",
+      "mime": "video/mp4",
+      "bytes": 1955218,
+      "sha256": "75eb5227dd5c66ef439b45edb69d7b681a92acd51f2999b9158c885e877eeb33"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/567/poster-12.jpg",
+      "mime": "image/jpeg",
+      "bytes": 43762,
+      "sha256": "fbd271fb64a33599738f1d3a7bc49784e9285904afdcb9749993b7f5f71f9fd3"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/571/image-43.png",
+      "mime": "image/png",
+      "bytes": 93789,
+      "sha256": "17baa9d1701fa4f4219040e46f8de0eb584af6a7ac8faf39e8cfe88265ab11d4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/571/image-44.png",
+      "mime": "image/png",
+      "bytes": 94210,
+      "sha256": "e6a56bf6ab748c0797a6a90030b71a6bcc6d13fda4f86c87d86a1f5a1e8d4e17"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/571/video-69.mp4",
+      "mime": "video/mp4",
+      "bytes": 738082,
+      "sha256": "56980d0ea85a1dc5f9baa581f28fc53655dc96db8c0159dca65eb6baa31cc6d1"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/571/poster-69.jpg",
+      "mime": "image/jpeg",
+      "bytes": 43440,
+      "sha256": "5bfb23190611e5d3cb74052f26ff26185cd26df75ebecc48178c4379e2cb662d"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/572/image-39.png",
+      "mime": "image/png",
+      "bytes": 36531,
+      "sha256": "b0c74fd695fc0ec90eac9e2c00d1f8e6652956e9fd7c806d40d3df13fced1560"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/572/image-40.png",
+      "mime": "image/png",
+      "bytes": 36374,
+      "sha256": "7d4582f8f8e0573cbbf40527d461a9a67337bc147e00cf097147bab753026b10"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/323/image-127.png",
+      "mime": "image/png",
+      "bytes": 38237,
+      "sha256": "f0e9a00a19f648c166647dbc5cdc16e4643b67a027a31a1a8230a8d7588cf94e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/323/image-128.png",
+      "mime": "image/png",
+      "bytes": 41163,
+      "sha256": "fd10e69ab260d525403335de4c24ddb469439234c1f8769d61b6205c64d36b9e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/12/video-74.mp4",
+      "mime": "video/mp4",
+      "bytes": 1214192,
+      "sha256": "f5b65693da1fbb45071077e146fd3d53b9e6da6eeee4559ed3d59ecb1216b456"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/12/poster-74.jpg",
+      "mime": "image/jpeg",
+      "bytes": 37248,
+      "sha256": "f4545e300ca032f099b3b28208c35803d32bd701162ffecbba758469a0f9bbee"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/82/video-7.mp4",
+      "mime": "video/mp4",
+      "bytes": 572415,
+      "sha256": "c4d400896663e57db7e8fcff37783d4279c067c1f572d87b5983cef47f80c204"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/82/poster-7.jpg",
+      "mime": "image/jpeg",
+      "bytes": 46600,
+      "sha256": "cfd0dc50a4d734115f6eff306c81d10b0dfd760c04185c52d9959e7c05ee3ed4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/465/video-54.mp4",
+      "mime": "video/mp4",
+      "bytes": 887473,
+      "sha256": "67ab25743abc6c0f6e2aec5dc3c73e3cb43a5b114315b1d686976a2c19f69460"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/465/poster-54.jpg",
+      "mime": "image/jpeg",
+      "bytes": 39904,
+      "sha256": "8f6a5a667136f19bd01c48a96b48f89c416560dd6cab578c5fcd0adfa7b97c95"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/222/video-79.mp4",
+      "mime": "video/mp4",
+      "bytes": 688267,
+      "sha256": "792bf66f883a1e8355228cd26424624b04c7e3d9fae9e09c31194ae889fc8e5f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/222/poster-79.jpg",
+      "mime": "image/jpeg",
+      "bytes": 47699,
+      "sha256": "f0c22df9d557fb5333e4af834efb6aaf2477c44337d30563f427c94905609f19"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/294/video-72.mp4",
+      "mime": "video/mp4",
+      "bytes": 1633788,
+      "sha256": "925e449f4526f607cc524916bd768b155622d74bcabbfbe240daf9409afcef3e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/294/poster-72.jpg",
+      "mime": "image/jpeg",
+      "bytes": 30859,
+      "sha256": "7eb273b48416ccb9799ae3be65701d7bc6a111a6121151b30c806e601e449885"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/341/video-42.mp4",
+      "mime": "video/mp4",
+      "bytes": 752278,
+      "sha256": "89c3bde76baafee2d0e3dad74c3241e58496ba512c56cf2063faf29e2e25173a"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/341/poster-42.jpg",
+      "mime": "image/jpeg",
+      "bytes": 46224,
+      "sha256": "3740d597e2f35ee73b01479f0b3798080f4e5b2ea718d8fcd02615905f4f8c8f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/349/video-5.mp4",
+      "mime": "video/mp4",
+      "bytes": 1068306,
+      "sha256": "a5a873cbf687e5b66443203adad89aea7316684663eab8075c66129f20ce37a4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/349/poster-5.jpg",
+      "mime": "image/jpeg",
+      "bytes": 45886,
+      "sha256": "864cfcfe4045b0db889619b19d1c3df5e0e3e611adaebc5f1e28d1ff4474b870"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/371/video-44.mp4",
+      "mime": "video/mp4",
+      "bytes": 1724716,
+      "sha256": "1c95f88c0daa50b9ce0266ebdbe58d2108ab8a2a58defd0f6334dc7c6e820e04"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/371/poster-44.jpg",
+      "mime": "image/jpeg",
+      "bytes": 45905,
+      "sha256": "2034db9118e4be4b23bcda21b183461a7ab91e087add14bdd25c57f7f3bcd2a7"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/477/video-70.mp4",
+      "mime": "video/mp4",
+      "bytes": 1017999,
+      "sha256": "de3eda1bfaa63ff0904a56b69fef1e57a47defcdcec83483c0865ad922ad554e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/477/poster-70.jpg",
+      "mime": "image/jpeg",
+      "bytes": 46331,
+      "sha256": "ca5a27d65b47eed3637df9c89a2058ede4e73505917545e1bd5951d9bd64f47e"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/507/video-2.mp4",
+      "mime": "video/mp4",
+      "bytes": 709755,
+      "sha256": "ff38dfe0bf17db0368e35a9dcf84738133ab34107995a071b7645acf35ca086b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/507/poster-2.jpg",
+      "mime": "image/jpeg",
+      "bytes": 41251,
+      "sha256": "4272382fd1444f934eb2d2b574f8f8ee743a8039b041cd0f5f73f6e6f79a8b7f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/543/video-11.mp4",
+      "mime": "video/mp4",
+      "bytes": 751982,
+      "sha256": "1a2cc6cc26a2b395b4a7448c89279b227ad473448e8919c0fcad9ab93adff6d5"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/543/poster-11.jpg",
+      "mime": "image/jpeg",
+      "bytes": 29760,
+      "sha256": "98589dd7e4de3925f168ffc3f8a2642a0b267f8a9eee59a2ed9d748aaa3841fb"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/590/video-13.mp4",
+      "mime": "video/mp4",
+      "bytes": 1131272,
+      "sha256": "d8b4e337d395c0be03c0874bdd77371e054a0fe03876a7fb5ac49e74236f06c3"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/590/poster-13.jpg",
+      "mime": "image/jpeg",
+      "bytes": 41603,
+      "sha256": "333d04a1132ee90c05bf3e8240e865b964e0bce6db8f64233d3cf07155f5a32b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/622/video-15.mp4",
+      "mime": "video/mp4",
+      "bytes": 891399,
+      "sha256": "c932c6743d5baeafb0b87f6e62ce8bb3815d889a6ffc089667a331ed78e565f8"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/622/poster-15.jpg",
+      "mime": "image/jpeg",
+      "bytes": 37728,
+      "sha256": "0a7fa794ab2246c0fc2b35e671112efd8d02dc99324318097aa35e236dc484c0"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/197/image-35.png",
+      "mime": "image/png",
+      "bytes": 46837,
+      "sha256": "b44b8c81f6e2f2605944358086cc3730d438c8f8accfea4f19246b74b4d98f5f"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/197/image-36.png",
+      "mime": "image/png",
+      "bytes": 53909,
+      "sha256": "b0507617e38e53acbc7ab0a75cae125bf959f049b293deb7c25f9399c9afc670"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/135/image-111.png",
+      "mime": "image/png",
+      "bytes": 50398,
+      "sha256": "bbcebf4eac97b0e2767f2cd92f9b63addd8096105dd58cb59633499c69ed293b"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/135/image-112.png",
+      "mime": "image/png",
+      "bytes": 42350,
+      "sha256": "d1b070a22b6ddd179928c44a8fa9518cc9b80ce26b86209e43b85aaa098c259a"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/238/image-212.png",
+      "mime": "image/png",
+      "bytes": 48020,
+      "sha256": "e1b14d52d06b473106907b948e7ba5a569ca2f323ea109045d6328e2f503ec9c"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/238/image-213.png",
+      "mime": "image/png",
+      "bytes": 43867,
+      "sha256": "2d58380901bf5da7d60b2f4c2f271d36316257572c247bdaa075604969ac08e4"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/828/image-214.png",
+      "mime": "image/png",
+      "bytes": 34456,
+      "sha256": "908c5ee47471f5c94ab26834e2f9da15b68bef0d219257e260ad3ac16223a118"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/828/image-215.png",
+      "mime": "image/png",
+      "bytes": 40868,
+      "sha256": "b5dfc0ea4bd6fbe444af86e30dc3842b5e190b8fd0b39a3deb4f06c366d018ac"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/957/image-271.png",
+      "mime": "image/png",
+      "bytes": 77955,
+      "sha256": "f854c0f87f645395bea79bed0e6da2b272c02b97944489d62ffa20993e2b07eb"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/203/image-328.jpg",
+      "mime": "image/jpeg",
+      "bytes": 51046,
+      "sha256": "bb75e5fca543056db51764b9648a0344cdfbe824ca2ce9c9a752d21d094bdead"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1131/image-397.jpg",
+      "mime": "image/jpeg",
+      "bytes": 9731,
+      "sha256": "d54d1b72a7579f1fce9389157e483e1e1b01eefd7d6e82b382f2539971fcccfc"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1136/image-402.jpg",
+      "mime": "image/jpeg",
+      "bytes": 20408,
+      "sha256": "a2d5ec5ea7710cf861fba698d9f61db3ccacb23c17e586aec11cbf86e2a79760"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/81/image-410.jpg",
+      "mime": "image/jpeg",
+      "bytes": 27846,
+      "sha256": "c6e1ec7747a02f91dd7969205f5a01e8dfa19d3d89a53231c6fc8f1a22b770d6"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1873/image-641.png",
+      "mime": "image/png",
+      "bytes": 587763,
+      "sha256": "13a08d6a7e892558ecd4c6183e6d92734397c9cfe468612c8e55126942387fd8"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1112/image-357.png",
+      "mime": "image/png",
+      "bytes": 227323,
+      "sha256": "c3c71c10f8d18369823ddf4ad0ab4375c1a08e508123aa0eed7f59a43c16e737"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/418/image-371.jpg",
+      "mime": "image/jpeg",
+      "bytes": 12773,
+      "sha256": "ba43cfb70941d29f8d87e4de0aefba4c3f05ca3029d2fa310f2bf3dd2863a8d3"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1733/image-601.png",
+      "mime": "image/png",
+      "bytes": 3912472,
+      "sha256": "1567a1305f7ad3e53053da26586d86b07470fb07c7b99b52d7af12516188d8f9"
+    },
+    {
+      "url": "/exercise-media/wger-library-v1/1736/image-604.png",
+      "mime": "image/png",
+      "bytes": 3297863,
+      "sha256": "873ace61687a2897ffddd5f697238523920866ed68679bd33531b4040c2fd43c"
+    }
+  ]
+}

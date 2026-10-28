@@ -1,0 +1,6 @@
+{
+  "name": "jianlibao-private-sync-functions",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@netlify/blobs": "11.1.6" }
+}
